@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/signinScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:background="#dfdfdf">
+
+        <RelativeLayout
+            android:id="@+id/tapView_Signin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageHat"
+                android:src="@drawable/chapeau_diplome"
+                android:layout_marginTop="27dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/titleView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Top UV"
+                android:id="@+id/titleView"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:layout_marginRight="115dp"
+                android:layout_alignTop="@+id/imageHat"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="28dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageHat"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usernameField"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Username"
+                    android:background="#ffffff"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/pwdField"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:hint="Password"
+                    android:linksClickable="false"
+                    android:background="#ffffff"
+                    android:padding="10dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in"
+                    android:id="@+id/loginButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70dp"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="#2b2b2b" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
