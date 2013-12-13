@@ -1,6 +1,7 @@
 package com.if26.topuv.fragment;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.if26.topuv.R;
+import com.if26.topuv.activities.CategoriesActivity;
 import com.if26.topuv.services.LoginService;
 
 
@@ -58,9 +60,10 @@ public class LoginFragment extends Fragment implements OnClickListener {
             String token = loginService.execute(login.getText().toString(), password.getText().toString()).get();
 
             if(token == null){
-                Toast.makeText(getActivity().getBaseContext(), "Invalid login details", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity().getBaseContext(), "Login Failed :( !", Toast.LENGTH_SHORT).show();
             } else if(token != null){
-                Toast.makeText(getActivity().getBaseContext(), "Login success !", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this.getActivity(), CategoriesActivity.class);
+                this.startActivity(intent);
             } else {
                 Toast.makeText(getActivity().getBaseContext(), "Something else wrong", Toast.LENGTH_SHORT).show();
             }

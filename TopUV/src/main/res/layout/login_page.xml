@@ -3,16 +3,15 @@
     android:id="@+id/parentView"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffff"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <ScrollView
         android:id="@+id/signinScroll"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:fillViewport="true"
-        android:orientation="vertical"
-        android:background="#dfdfdf">
+        android:orientation="vertical">
 
         <RelativeLayout
             android:id="@+id/tapView_Signin"
@@ -26,8 +25,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageHat"
-                android:src="@drawable/chapeau_diplome"
-                android:layout_marginTop="27dp"
+                android:src="@drawable/login_logo"
+                android:layout_marginTop="26dp"
                 android:layout_alignParentTop="true"
                 android:layout_toLeftOf="@+id/titleView" />
 
@@ -84,7 +83,7 @@
                     android:layout_marginTop="70dp"
                     android:textSize="20sp"
                     android:textColor="#ffffff"
-                    android:background="#2b2b2b" />
+                    android:background="#363e49" />
 
             </LinearLayout>
 

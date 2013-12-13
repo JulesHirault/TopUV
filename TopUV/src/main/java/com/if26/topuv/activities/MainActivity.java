@@ -15,12 +15,5 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.commit();
-
-        LoginFragment lf = new LoginFragment();
-        ft.add(R.id.myFragment, lf);
     }
 }

@@ -3,6 +3,8 @@ package com.if26.topuv.services;
 
 import android.os.AsyncTask;
 
+import com.if26.topuv.constants.WSConstants;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -29,20 +31,19 @@ public class LoginService extends AsyncTask<String, Void, String> {
     protected String doInBackground(String... args) {
         String login = args[0];
         String password = args[1];
-        String url = "http://10.18.3.250:8888/login.php";
 
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
 
         // Making HTTP request
         try {
 
-            HttpPost httpPost = new HttpPost(url);
+            HttpPost httpPost = new HttpPost(WSConstants.LOGIN.URI);
             // defaultHttpClient
             DefaultHttpClient httpClient = new DefaultHttpClient();
 
 
-            nameValuePairs.add(new BasicNameValuePair("login", login));
-            nameValuePairs.add(new BasicNameValuePair("password", password));
+            nameValuePairs.add(new BasicNameValuePair(WSConstants.LOGIN.LOGIN, login));
+            nameValuePairs.add(new BasicNameValuePair(WSConstants.LOGIN.PASSWORD, password));
 
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
@@ -50,7 +51,7 @@ public class LoginService extends AsyncTask<String, Void, String> {
             String response = EntityUtils.toString(httpResponse.getEntity());
 
             JSONObject jsonObject = new JSONObject(response);
-            return jsonObject.getString("token");
+            return jsonObject.getString(WSConstants.LOGIN.TOKEN);
 
         } catch (JSONException e) {
             e.printStackTrace();
