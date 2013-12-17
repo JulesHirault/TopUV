@@ -23,8 +23,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.CategoriesActivity"
-            android:label="@string/activity_categories">
+            android:name="com.if26.topuv.activities.CategoriesActivity"
+            android:label="@string/activity_categories" >
+        </activity>
+        <activity
+            android:name="com.if26.topuv.activities.ListUVActivity"
+            android:label="@string/title_activity_list_uv" >
         </activity>
     </application>
 
