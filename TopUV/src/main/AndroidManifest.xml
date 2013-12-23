@@ -26,6 +26,10 @@
             android:name=".activities.CategoriesActivity"
             android:label="@string/activity_categories">
         </activity>
+        <activity
+            android:name=".activities.ListActivity"
+            android:label="@string/activity_list_uv">
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

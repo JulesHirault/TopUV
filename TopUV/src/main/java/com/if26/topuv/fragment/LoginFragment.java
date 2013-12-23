@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.if26.topuv.R;
 import com.if26.topuv.activities.CategoriesActivity;
+import com.if26.topuv.constants.IntentConstants;
 import com.if26.topuv.services.LoginService;
 
 
@@ -63,6 +64,7 @@ public class LoginFragment extends Fragment implements OnClickListener {
                 Toast.makeText(getActivity().getBaseContext(), "Login Failed :( !", Toast.LENGTH_SHORT).show();
             } else if(token != null){
                 Intent intent = new Intent(this.getActivity(), CategoriesActivity.class);
+                intent.putExtra(IntentConstants.TOKEN, token);
                 this.startActivity(intent);
             } else {
                 Toast.makeText(getActivity().getBaseContext(), "Something else wrong", Toast.LENGTH_SHORT).show();

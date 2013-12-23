@@ -4,5 +4,6 @@
     <string name="app_name">  TopUV</string>
     <string name="action_settings">Settings</string>
     <string name="activity_categories">  TopUV : Categories</string>
+    <string name="activity_list_uv">  TopUV : Resultat</string>
 
 </resources>

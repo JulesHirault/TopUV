@@ -1,13 +1,8 @@
 <?php
-class Student
+class Category
 {
         public $id;
-        public $login;
-        public $password;
-        public $name;
-        public $surname;
-        public $picture;
-        public $token;
+        public $label;
 
         public function toDatabase()
         {

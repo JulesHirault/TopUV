@@ -9,6 +9,7 @@ public class Student {
     public String password;
     public String name;
     public String surname;
+    public String picture;
     public String token;
 
     public String getIdentity()

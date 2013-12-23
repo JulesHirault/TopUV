@@ -5,76 +5,91 @@
     android:layout_height="wrap_content"
     android:paddingLeft="20dp"
     android:paddingTop="50dp">
-<TableRow android:layout_height="wrap_content"
-          android:layout_width="wrap_content"
-    android:paddingBottom="20dp">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/CS"
-        android:src="@drawable/img_cat_connaissances_scientifiques_select" />
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/TM"
-        android:src="@drawable/img_cat_technologie_methode_select"
-        android:paddingLeft="22dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ME"
-        android:src="@drawable/img_cat_management_entreprise_select"
-        android:paddingLeft="22dp" />
-</TableRow>
     <TableRow android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:paddingBottom="20dp">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/img_cat_culture_technologie_select"
-        android:id="@+id/CT" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CS"
+            android:src="@drawable/img_cat_connaissances_scientifiques_select" />
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/EC"
-        android:src="@drawable/img_cat_expression_communication_select"
-        android:paddingLeft="22dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TM"
+            android:src="@drawable/img_cat_technologie_methode_select"
+            android:paddingLeft="22dp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Stages"
-        android:src="@drawable/img_cat_stages_select"
-        android:paddingLeft="22dp" />
-</TableRow>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ME"
+            android:src="@drawable/img_cat_management_entreprise_select"
+            android:paddingLeft="22dp" />
+    </TableRow>
     <TableRow android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:paddingBottom="20dp">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Autre"
-        android:src="@drawable/img_cat_autres_select" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_cat_culture_technologie_select"
+            android:id="@+id/CT" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/img_cat_top_select"
-        android:id="@+id/Top"
-        android:paddingLeft="22dp" />
 
-    <ImageView
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EC"
+            android:src="@drawable/img_cat_expression_communication_select"
+            android:paddingLeft="22dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Stages"
+            android:src="@drawable/img_cat_stages_select"
+            android:paddingLeft="22dp" />
+    </TableRow>
+    <TableRow android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Flop"
-        android:src="@drawable/img_cat_flop_select"
-        android:paddingLeft="22dp" />
+        android:paddingBottom="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Autre"
+            android:src="@drawable/img_cat_autres_select" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_cat_top_select"
+            android:id="@+id/Top"
+            android:paddingLeft="22dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Flop"
+            android:src="@drawable/img_cat_flop_select"
+            android:paddingLeft="22dp" />
+    </TableRow>
+    <TableRow android:paddingBottom="20dp"
+        android:paddingLeft="60dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_cat_mes_uv_select"
+            android:id="@+id/MesUV" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Search"
+            android:src="@drawable/img_cat_rechercher_select"
+            android:paddingLeft="22dp" />
     </TableRow>
 </TableLayout>
