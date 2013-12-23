@@ -1,4 +1,4 @@
-INSERT INTO `topuv`.`uv` (`id`, `label`, `id_description`, `avg_mark`, `id_category`) VALUES 
+INSERT INTO `u956485103_topuv`.`uv` (`id`, `label`, `id_description`, `avg_mark`, `id_category`) VALUES 
 ("CHMA01", "Structure et transformation de la matière", "", "", "1"),
 ("CHMA02", "Chimie des procédés industriels", "", "", "1"),
 ("CHMA03", "Structure et propriétés des solides", "", "", "1"),

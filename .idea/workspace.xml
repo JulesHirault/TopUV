@@ -28,36 +28,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d3b997b-e0f1-43f9-91bf-03b3326b16c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/drawable-hdpi/img_cat_mes_uv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/drawable-hdpi/img_cat_mes_uv_pressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/drawable-hdpi/img_cat_rechercher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/drawable-hdpi/img_cat_rechercher_pressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Category.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/IntentConstants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/ListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/ListService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Uv.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_list_uv.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/model/category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/model/comment.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/model/description.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_mes_uv_select.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_rechercher_select.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/list_uv.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/liste_uv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/model/mark.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/tab_page.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/model/uv.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/database/uv.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/TopUV/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/LoginFragment.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/LoginFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Student.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Student.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/res/layout/categories_page.xml" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/categories_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/TopUV/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/configDB.php" afterPath="$PROJECT_DIR$/htdocs/configDB.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/liste_uv.php" afterPath="$PROJECT_DIR$/htdocs/liste_uv.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/model/student.php" afterPath="$PROJECT_DIR$/htdocs/model/student.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/database/uv.sql" afterPath="$PROJECT_DIR$/htdocs/database/uv.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TopUV.iws" />
@@ -123,40 +99,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ListUv.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="56" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="443" max-vertical-offset="1140">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Student.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="31" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Uv.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Uv.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CategoriesFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="62" selection-start="2554" selection-end="2554" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1470">
+            <state line="95" column="23" selection-start="4087" selection-end="4087" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WSConstants.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="675">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/LoginService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="0" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/ListService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="71" selection-start="2130" selection-end="2131" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="1455">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1129#1144#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -625,13 +602,13 @@
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/ListService.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/IntentConstants.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/ListActivity.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Uv.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/list_uv.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java" />
       </list>
     </option>
   </component>
@@ -1254,7 +1231,11 @@
       <created>1386947374582</created>
       <updated>1386947374582</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update Java classes&#10;Add ListUv system display (new Layout, Activity)&#10;Starting TabDisplay (new Layout)&#10;Add new server files to get Uvs&#10;Update Menu Display (adding 2 new buttons, search and mes Uvs)">
+      <created>1387811573608</created>
+      <updated>1387811573608</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1306,17 +1287,13 @@
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
     <MESSAGE value="test&#10;" />
     <MESSAGE value="Java class updates (constant class)&#10;New Classes and new display : the categories page&#10;and all the files going with categories page&#10;Plus new visual style&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java class updates (constant class)&#10;New Classes and new display : the categories page&#10;and all the files going with categories page&#10;Plus new visual style&#10;" />
+    <MESSAGE value="Update Java classes&#10;Add ListUv system display (new Layout, Activity)&#10;Starting TabDisplay (new Layout)&#10;Add new server files to get Uvs&#10;Update Menu Display (adding 2 new buttons, search and mes Uvs)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Java classes&#10;Add ListUv system display (new Layout, Activity)&#10;Starting TabDisplay (new Layout)&#10;Add new server files to get Uvs&#10;Update Menu Display (adding 2 new buttons, search and mes Uvs)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/os/AsyncTask.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/view/View.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17820" />
@@ -1494,23 +1471,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0" vertical-offset="188" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/IntentConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="59" selection-start="214" selection-end="214" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="32" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
@@ -1557,16 +1520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="0" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1125">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/ListService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="101" selection-start="2857" selection-end="2865" vertical-scroll-proportion="0.0" vertical-offset="698" max-vertical-offset="1455">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1129#1144#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1634,22 +1587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="56" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="443" max-vertical-offset="1140">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/ListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -1659,16 +1596,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="56" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.3676815" vertical-offset="443" max-vertical-offset="1140">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="31" selection-start="306" selection-end="306" vertical-scroll-proportion="0.4918033" vertical-offset="0" max-vertical-offset="427">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Uv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state line="18" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.6323185" vertical-offset="0" max-vertical-offset="427">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/os/AsyncTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0" vertical-offset="173" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="62" selection-start="2554" selection-end="2554" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1470">
+        <state line="95" column="23" selection-start="4087" selection-end="4087" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1515">
           <folding />
         </state>
       </provider>
@@ -1677,6 +1651,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="427">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/ListService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="71" selection-start="2130" selection-end="2131" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="1455">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1129#1144#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
