@@ -30,6 +30,10 @@
             android:name=".activities.ListActivity"
             android:label="@string/activity_list_uv">
         </activity>
+        <activity
+            android:name=".activities.SearchActivity"
+            android:label="@string/activity_search">
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
