@@ -18,8 +18,11 @@ CREATE TABLE IF NOT EXISTS `description_uv` (
   `objectives` varchar(500) NOT NULL,
   `type_uv` varchar(500) NOT NULL,
   `credits` varchar(500) NOT NULL,
-  `time` int(255) NOT NULL,
   `availability` varchar(500) NOT NULL,
+  `lectures` varchar(255) NOT NULL,
+  `tutorials` varchar(255) NOT NULL,
+  `practicals` varchar(255) NOT NULL,
+  `personnal` varchar(255) NOT NULL,
   `id_uv` varchar(6) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_uv` (`id_uv`)
@@ -40,6 +43,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   `name` varchar(100) NOT NULL,
   `surname` varchar(100) NOT NULL,
   `token` varchar(255) NOT NULL,
+  `picture` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
