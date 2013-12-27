@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.if26.topuv.R;
 import com.if26.topuv.activities.CategoriesActivity;
 import com.if26.topuv.activities.ListActivity;
+import com.if26.topuv.activities.SearchActivity;
 import com.if26.topuv.constants.IntentConstants;
 
 import java.util.concurrent.ExecutionException;
@@ -102,7 +103,10 @@ public class CategoriesFragment extends Fragment implements View.OnClickListener
             intent.putExtra(IntentConstants.TOKEN, token);
             this.startActivity(intent);
         } else if(view == Search) {
-            Toast.makeText(getActivity().getBaseContext(), "Get Search List", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this.getActivity(), SearchActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "8");
+            intent.putExtra(IntentConstants.TOKEN, token);
+            this.startActivity(intent);
         }
     }
 
