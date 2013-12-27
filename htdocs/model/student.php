@@ -6,7 +6,6 @@ class Student
         public $password;
         public $name;
         public $surname;
-        public $picture;
         public $token;
 
         public function toDatabase()

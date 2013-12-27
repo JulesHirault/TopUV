@@ -7,10 +7,10 @@ class Description
         public $objectives;
         public $type_uv;
         public $credit;
-        public $time_cours;
-        public $time_td;
-        public $time_tp;
-        public $time_perso;
+        public $tutorials;
+        public $practicals;
+        public $personnal;
+        public $lectures;
         public $availibility;
 
         public $uv;
