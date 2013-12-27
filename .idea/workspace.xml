@@ -28,7 +28,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d3b997b-e0f1-43f9-91bf-03b3326b16c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TopUV.iws" />
@@ -112,15 +111,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/LoginService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="1258">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ListService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/ListService.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -133,7 +123,7 @@
       <file leaf-file-name="list_uv.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/list_uv.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="46" selection-start="439" selection-end="439" vertical-scroll-proportion="-7.48" vertical-offset="0" max-vertical-offset="459">
+            <state line="11" column="46" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
@@ -145,7 +135,7 @@
       <file leaf-file-name="Uv.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Uv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+            <state line="5" column="13" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -154,16 +144,25 @@
       <file leaf-file-name="SearchFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/SearchFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="14" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="901">
+            <state line="47" column="14" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="local.properties" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TopUV.sql" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/htdocs/database/TopUV.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="10" selection-start="2644" selection-end="2644" vertical-scroll-proportion="0.8816156" vertical-offset="710" max-vertical-offset="1445">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="local.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.35940802" vertical-offset="0" max-vertical-offset="473">
+            <state line="11" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -172,7 +171,7 @@
       <file leaf-file-name="SearchActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/SearchActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+            <state line="10" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -181,7 +180,7 @@
       <file leaf-file-name="activity_search.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_search.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
               <folding />
             </state>
           </provider>
@@ -627,6 +626,7 @@
         <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/list_uv.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java" />
+        <option value="$PROJECT_DIR$/htdocs/database/TopUV.sql" />
       </list>
     </option>
   </component>
@@ -681,7 +681,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -992,9 +991,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TopUV" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TopUV" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TopUV" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TopUV" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1089,6 +1121,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1114,19 +1159,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1264,7 +1296,6 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39911634" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1273,7 +1304,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3293011" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -1287,6 +1318,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1314,13 +1346,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TopUV/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/proguard-rules.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="651" />
@@ -1332,13 +1357,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="303" selection-end="303" vertical-scroll-proportion="0.225" vertical-offset="0" max-vertical-offset="400">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/menu/main.xml">
@@ -1348,58 +1373,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_flop_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="567" selection-end="567" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427">
-          <folding />
-        </state>
+        <state line="7" column="11" selection-start="567" selection-end="567" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_stages_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="112" selection-start="560" selection-end="560" vertical-scroll-proportion="0.21077283" vertical-offset="0" max-vertical-offset="427">
-          <folding />
-        </state>
+        <state line="6" column="112" selection-start="560" selection-end="560" vertical-scroll-proportion="0.21077283" vertical-offset="0" max-vertical-offset="427" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_management_entreprise_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="127" selection-start="620" selection-end="620" vertical-scroll-proportion="0.2173913" vertical-offset="0" max-vertical-offset="414">
-          <folding />
-        </state>
+        <state line="6" column="127" selection-start="620" selection-end="620" vertical-scroll-proportion="0.2173913" vertical-offset="0" max-vertical-offset="414" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_expression_communication_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="130" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
+        <state line="6" column="130" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_culture_technologie_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
+        <state line="7" column="11" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_connaissances_scientifiques_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="659" selection-end="659" vertical-scroll-proportion="0.2536232" vertical-offset="0" max-vertical-offset="414">
-          <folding />
-        </state>
+        <state line="7" column="11" selection-start="659" selection-end="659" vertical-scroll-proportion="0.2536232" vertical-offset="0" max-vertical-offset="414" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_technologie_methode_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="631" selection-end="631" vertical-scroll-proportion="0.2536232" vertical-offset="0" max-vertical-offset="414">
-          <folding />
-        </state>
+        <state line="7" column="11" selection-start="631" selection-end="631" vertical-scroll-proportion="0.2536232" vertical-offset="0" max-vertical-offset="414" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_top_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="563" selection-end="563" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427">
-          <folding />
-        </state>
+        <state line="7" column="11" selection-start="563" selection-end="563" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/values/styles.xml">
@@ -1411,53 +1420,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_autres_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="0" selection-end="575" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427">
-          <folding />
-        </state>
+        <state line="7" column="11" selection-start="0" selection-end="575" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_mes_uv_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="575" selection-end="575" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427">
-          <folding />
-        </state>
+        <state line="7" column="11" selection-start="575" selection-end="575" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_rechercher_select.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
+        <state line="7" column="11" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/login_page.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="85" column="41" selection-start="3637" selection-end="3643" vertical-scroll-proportion="0.0" vertical-offset="980" max-vertical-offset="1455">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/categories_page.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/categories_page.xml">
       <provider editor-type-id="text-editor">
         <state line="84" column="57" selection-start="3172" selection-end="3172" vertical-scroll-proportion="0.0" vertical-offset="1070" max-vertical-offset="1500">
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/tab_page.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/tab_page.xml">
       <provider editor-type-id="text-editor">
         <state line="40" column="29" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="810">
           <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Category.java">
@@ -1475,13 +1478,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_categories.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="60" selection-start="244" selection-end="300" vertical-scroll-proportion="-2.7777777" vertical-offset="0" max-vertical-offset="165">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/values/colors_actionbarstyle.xml">
@@ -1532,13 +1535,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_list_uv.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="52" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/app/Fragment.class">
@@ -1633,13 +1636,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/list_uv.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="46" selection-start="439" selection-end="439" vertical-scroll-proportion="-7.48" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="46" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="459">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Uv.java">
@@ -1657,13 +1660,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_search.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/SearchFragment.java">
@@ -1675,7 +1678,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="422" selection-end="422" vertical-scroll-proportion="0.35940802" vertical-offset="0" max-vertical-offset="473">
+        <state line="11" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/database/TopUV.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="10" selection-start="2644" selection-end="2644" vertical-scroll-proportion="0.8816156" vertical-offset="710" max-vertical-offset="1445">
           <folding />
         </state>
       </provider>
