@@ -1,6 +1,7 @@
 package com.if26.topuv.fragment;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,10 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.if26.topuv.R;
+import com.if26.topuv.activities.CategoriesActivity;
+import com.if26.topuv.activities.ListActivity;
+import com.if26.topuv.activities.SearchActivity;
+import com.if26.topuv.constants.IntentConstants;
 
 import java.util.concurrent.ExecutionException;
 
@@ -17,7 +22,7 @@ import java.util.concurrent.ExecutionException;
  */
 public class CategoriesFragment extends Fragment implements View.OnClickListener {
 
-    private ImageView CS, TM, ME, CT, EC, Stages, Autre, Top, Flop;
+    private ImageView CS, TM, ME, CT, EC, Stages, Autre, Top, Flop, MesUV, Search;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,6 +37,8 @@ public class CategoriesFragment extends Fragment implements View.OnClickListener
         Autre = (ImageView) v.findViewById(R.id.Autre);
         Top = (ImageView) v.findViewById(R.id.Top);
         Flop = (ImageView) v.findViewById(R.id.Flop);
+        MesUV = (ImageView) v.findViewById(R.id.MesUV);
+        Search = (ImageView) v.findViewById(R.id.Search);
         CS.setOnClickListener(this);
         TM.setOnClickListener(this);
         ME.setOnClickListener(this);
@@ -41,30 +48,65 @@ public class CategoriesFragment extends Fragment implements View.OnClickListener
         Autre.setOnClickListener(this);
         Top.setOnClickListener(this);
         Flop.setOnClickListener(this);
+        Search.setOnClickListener(this);
+        MesUV.setOnClickListener(this);
 
         return v;
     }
 
     @Override
     public void onClick(View view) {
+        String token = this.getActivity().getIntent().getStringExtra(IntentConstants.TOKEN);
+
         if(view == CS){
-            Toast.makeText(getActivity().getBaseContext(), "Get CS List", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "1");
+            intent.putExtra(IntentConstants.TOKEN, token);
+            this.startActivity(intent);
         } else if(view == TM) {
-            Toast.makeText(getActivity().getBaseContext(), "Get TM List", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "2");
+            intent.putExtra(IntentConstants.TOKEN, token);
+            this.startActivity(intent);
         } else if(view == ME) {
-            Toast.makeText(getActivity().getBaseContext(), "Get ME List", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "4");
+            intent.putExtra(IntentConstants.TOKEN, token);
+            this.startActivity(intent);
         } else if(view == CT) {
-            Toast.makeText(getActivity().getBaseContext(), "Get CT List", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "3");
+            intent.putExtra(IntentConstants.TOKEN, token);
+            this.startActivity(intent);
         } else if(view == EC) {
-            Toast.makeText(getActivity().getBaseContext(), "Get EC List", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "5");
+            intent.putExtra(IntentConstants.TOKEN, token);
+            this.startActivity(intent);
         } else if(view == Stages) {
-            Toast.makeText(getActivity().getBaseContext(), "Get Stages List", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "6");
+            intent.putExtra(IntentConstants.TOKEN, token);
+            this.startActivity(intent);
         } else if(view == Autre) {
-            Toast.makeText(getActivity().getBaseContext(), "Get Autre List", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "7");
+            intent.putExtra(IntentConstants.TOKEN, token);
+            this.startActivity(intent);
         } else if(view == Top) {
             Toast.makeText(getActivity().getBaseContext(), "Get Top List", Toast.LENGTH_SHORT).show();
         } else if(view == Flop) {
             Toast.makeText(getActivity().getBaseContext(), "Get Flop List", Toast.LENGTH_SHORT).show();
+        } else if(view == MesUV) {
+            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "0");
+            intent.putExtra(IntentConstants.TOKEN, token);
+            this.startActivity(intent);
+        } else if(view == Search) {
+            Intent intent = new Intent(this.getActivity(), SearchActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "8");
+            intent.putExtra(IntentConstants.TOKEN, token);
+            this.startActivity(intent);
         }
     }
 
