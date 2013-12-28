@@ -28,8 +28,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d3b997b-e0f1-43f9-91bf-03b3326b16c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/desc.php" afterPath="$PROJECT_DIR$/htdocs/desc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/details.php" afterPath="$PROJECT_DIR$/htdocs/details.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TopUV.iws" />
@@ -107,7 +105,7 @@
       <file leaf-file-name="details.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/htdocs/details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="1" selection-start="300" selection-end="300" vertical-scroll-proportion="0.508046" vertical-offset="0" max-vertical-offset="646">
+            <state line="5" column="26" selection-start="172" selection-end="172" vertical-scroll-proportion="0.1954023" vertical-offset="0" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -1236,7 +1234,11 @@
       <created>1388250684816</created>
       <updated>1388250684816</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;local.properties&#10;">
+      <created>1388251542052</created>
+      <updated>1388251542052</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1622,7 +1624,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/details.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="300" selection-end="300" vertical-scroll-proportion="0.508046" vertical-offset="0" max-vertical-offset="646">
+        <state line="5" column="26" selection-start="172" selection-end="172" vertical-scroll-proportion="0.1954023" vertical-offset="0" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
