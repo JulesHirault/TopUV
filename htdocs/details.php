@@ -1,40 +1,33 @@
 <?php
-try {//creation de l'objet PDO
-	$db = new PDO('mysql:host=localhost;dbname=test','root','root');
-	$id_uv = $_POST[id];
+require_once('database/database.php');
+require_once('model/student.php');
+require_once('model/uv.php');
+require_once('model/category.php');
+require_once('model/studentUv.php');
 
-
-	//création de la requête avec la methode des marqueurs
-	$strSQL = "SELECT curricula, objectives, type_uv, credits, availability, lectures, tutorials, practicals, personnal FROM uv, description_uv WHERE uv.id_description = description_uv.id and uv.id = '$id_uv'";
-
-
-	$stmt = $db->prepare($strSQL); // création de l'objet PDOStatment
-	$stmt->execute(array('id_uv'));
-
-
-	$row = array();
-	//affichage du résultat
-	while($result = $stmt->fetch(PDO::FETCH_OBJ)){
-		$row['curricula'] = $result->curricula;
-		$row['objectives'] = $result->objectives;
-		$row['type_uv'] = $result->type_uv;
-		$row['credits'] = $result->credits;
-		$row['availability'] = $result->availability;
-		$row['lectures'] = $result->lectures;
-		$row['tutorials'] = $result->tutorials;
-		$row['practicals'] = $result->practicals;
-		$row['personnal'] = $result->personnal;
-	}
-	if($row == null){
-		$row['error'] = true;
-	} else {
-		$row['error'] = false;
-	}
-    header('Content-type: application/json');
-    echo json_encode(array('descritpion_uv'=>$row));
-} catch (PDOException $e){ //erreur de connexion à la base
-	print "Erreur : ".$e->getMessage();
-	die();
+$parameters = array
+(
+        ':token' => null,
+        ':id_uv' => null
+);
+foreach($_POST as $key => $value)
+{
+        $parameters[":$key"] = $value;
 }
-$db = null; //on ferme la connexion
+
+$json = array(
+        'error' => true
+);
+
+$configDB = require_once('configDB.php');
+$db = new Database($configDB['dsn'], $configDB['username'], $configDB['password'], $configDB['options']);
+
+$desc = $db->selectOne('Description', 'description_uv', 'uv.id_description = description_uv.id AND uv.id = :id_uv', array(':id_uv' => $parameters[':id_uv']));
+
+$json = array(
+    'error' => false,
+    'desc' => $desc
+);
+
+echo json_encode($json);
 ?>
