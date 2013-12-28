@@ -13,16 +13,11 @@ class Description
         public $lectures;
         public $availibility;
 
-        public $uv;
-
         public function toDatabase()
         {
                 $object = get_object_vars($this);
                 unset($object['uv']);
                 return $object;
         }
-
-
-babab
 }
 ?>
