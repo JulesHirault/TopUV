@@ -6,7 +6,7 @@ require_once('model/comment.php');
 $parameters = array
 (
         ':token' => null,
-        ':id_uv' => null
+        ':id_uv' => 'IF26'
 );
 foreach($_POST as $key => $value)
 {

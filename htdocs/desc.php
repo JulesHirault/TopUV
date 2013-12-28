@@ -6,7 +6,7 @@ require_once('model/uv.php');
 $parameters = array
 (
         ':token' => null,
-        ':id_uv' => null
+        ':id_uv' => 'IF05'
 );
 foreach($_POST as $key => $value)
 {
