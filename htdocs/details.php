@@ -4,6 +4,7 @@ require_once('model/student.php');
 require_once('model/uv.php');
 require_once('model/category.php');
 require_once('model/studentUv.php');
+require_once('model/description.php');
 
 $parameters = array
 (
