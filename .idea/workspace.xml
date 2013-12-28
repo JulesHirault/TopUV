@@ -28,8 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d3b997b-e0f1-43f9-91bf-03b3326b16c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/model/description.php" afterPath="$PROJECT_DIR$/htdocs/model/description.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/details.php" afterPath="$PROJECT_DIR$/htdocs/details.php" />
+      <change type="MOVED" beforePath="C:\Users\Jules\Documents\GitHub\TopUV\htdocs\description.php" afterPath="$PROJECT_DIR$/htdocs/desc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TopUV.iws" />
@@ -140,19 +139,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="description.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="description.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/model/description.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.796875" vertical-offset="0" max-vertical-offset="476">
+            <state line="21" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="-14.28" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="description.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htdocs/description.php">
+      <file leaf-file-name="desc.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/htdocs/desc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="29" selection-start="109" selection-end="109" vertical-scroll-proportion="4.52" vertical-offset="164" max-vertical-offset="612">
+            <state line="3" column="29" selection-start="109" selection-end="109" vertical-scroll-proportion="-0.25223213" vertical-offset="164" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -1233,7 +1232,11 @@
       <created>1388248006579</created>
       <updated>1388248006579</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;local.properties&#10;">
+      <created>1388250026125</created>
+      <updated>1388250026126</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1589,13 +1592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/description.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="109" selection-end="109" vertical-scroll-proportion="4.52" vertical-offset="164" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/comment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="34" selection-start="79" selection-end="79" vertical-scroll-proportion="5.72" vertical-offset="177" max-vertical-offset="612">
@@ -1619,7 +1615,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/model/description.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.796875" vertical-offset="0" max-vertical-offset="476">
+        <state line="21" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="-14.28" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/desc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="29" selection-start="109" selection-end="109" vertical-scroll-proportion="-0.25223213" vertical-offset="164" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
