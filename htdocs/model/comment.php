@@ -4,7 +4,7 @@ class Comment
         public $id;
         public $text;
         public $id_student;
-
+        public $id_uv;
         public $student;
 
         public function toDatabase()

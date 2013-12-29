@@ -1,7 +1,7 @@
 package com.if26.topuv.models;
 
 /**
- * Created by Flo on 23/12/2013.
+ * Created by Jules on 17/12/13.
  */
 public class Uv {
     public String id;
