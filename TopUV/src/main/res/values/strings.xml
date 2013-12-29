@@ -6,5 +6,7 @@
     <string name="activity_categories">  TopUV : Categories</string>
     <string name="activity_list_uv">  TopUV : Resultat</string>
     <string name="activity_search">  TopUV : Recherche</string>
+    <string name="tab_title_1">Tab 1</string>
+    <string name="tab_title_2">Tab 2</string>
 
 </resources>

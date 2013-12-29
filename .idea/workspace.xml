@@ -18,6 +18,18 @@
           <theme>@style/Theme.Actionbarstyle</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/TopUV/src/main/res/layout/description_page.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/Theme.Actionbarstyle</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/TopUV/src/main/res/layout/details_page.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/Theme.Actionbarstyle</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/TopUV/src/main/res/layout/login_page.xml">
         <config>
           <device>Nexus 4</device>
@@ -34,13 +46,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d3b997b-e0f1-43f9-91bf-03b3326b16c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/SearchActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/SearchFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_search.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/search_page.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CommentsFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DescriptionFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DetailsFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/TabActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/TabFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_tab_page.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/comments_page.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/description_page.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/details_page.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/TopUV/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/TopUV-TopUV.iml" afterPath="$PROJECT_DIR$/TopUV/TopUV-TopUV.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/build.gradle" afterPath="$PROJECT_DIR$/TopUV/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/res/layout/categories_page.xml" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/categories_page.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/TopUV/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/res/layout/tab_page.xml" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/tab_page.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TopUV.iws" />
@@ -106,74 +128,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="TabFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/TabFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="44" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="1110">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CategoriesFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="39" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.0" vertical-offset="998" max-vertical-offset="1560">
+            <state line="108" column="39" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WSConstants.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java">
+      <file leaf-file-name="DescriptionFragment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DescriptionFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.15690866" vertical-offset="248" max-vertical-offset="675">
+            <state line="31" column="1" selection-start="935" selection-end="935" vertical-scroll-proportion="0.7728337" vertical-offset="0" max-vertical-offset="427">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_uv.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/list_uv.xml">
+      <file leaf-file-name="details_page.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/details_page.xml">
+          <provider editor-type-id="text-editor">
+            <state line="163" column="51" selection-start="7513" selection-end="7513" vertical-scroll-proportion="0.0" vertical-offset="2135" max-vertical-offset="2580">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tab_page.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/tab_page.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="750">
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="android-designer">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="46" selection-start="439" selection-end="439" vertical-scroll-proportion="-5.9259257" vertical-offset="5" max-vertical-offset="405">
+        </entry>
+      </file>
+      <file leaf-file-name="description_page.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/description_page.xml">
+          <provider editor-type-id="text-editor">
+            <state line="49" column="70" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1245">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/SearchFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="975">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListUv.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="108" selection-start="771" selection-end="964" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="900">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/LoginFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="9" selection-start="2403" selection-end="2403" vertical-scroll-proportion="0.0" vertical-offset="563" max-vertical-offset="1125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login_page.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/login_page.xml">
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DetailsFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DetailsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="51" selection-start="3175" selection-end="3647" vertical-scroll-proportion="-10.37037" vertical-offset="995" max-vertical-offset="1455">
+            <state line="18" column="75" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="435">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_tab_page.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_tab_page.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="57" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -248,14 +283,14 @@
                 <option name="name" value="assembleDefaultFlavorDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Assembles the Test build for the DefaultFlavorDebug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="assembleDefaultFlavorDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles the Release build for flavor DefaultFlavor" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="assembleDefaultFlavorRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the Test build for the DefaultFlavorDebug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="assembleDefaultFlavorTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all Release builds" />
@@ -294,11 +329,15 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="compileDefaultFlavorDebug" />
+                <option name="name" value="compileDefaultFlavorDebugAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="compileDefaultFlavorDebugAidl" />
+                <option name="name" value="compileDefaultFlavorDebugJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="compileDefaultFlavorDebugNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
@@ -306,7 +345,19 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="compileDefaultFlavorRelease" />
+                <option name="name" value="compileDefaultFlavorDebugTestAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="compileDefaultFlavorDebugTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="compileDefaultFlavorDebugTestNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="compileDefaultFlavorDebugTestRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
@@ -314,19 +365,15 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="compileDefaultFlavorReleaseJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="compileDefaultFlavorReleaseNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="compileDefaultFlavorReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="compileDefaultFlavorTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="compileDefaultFlavorTestAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="compileDefaultFlavorTestRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
@@ -343,7 +390,7 @@
                 <option name="name" value="connectedInstrumentTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for Build 'DefaultFlavorDebug' on connected devices." />
+                <option name="description" value="Installs and runs the tests for Build 'defaultFlavorDebug' on connected devices." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="connectedInstrumentTestDefaultFlavorDebug" />
               </ExternalTaskPojo>
@@ -363,11 +410,11 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="dexDefaultFlavorRelease" />
+                <option name="name" value="dexDefaultFlavorDebugTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="dexDefaultFlavorTest" />
+                <option name="name" value="dexDefaultFlavorRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
@@ -379,19 +426,19 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="generateDefaultFlavorDebugTestBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="generateDefaultFlavorDebugTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="generateDefaultFlavorReleaseBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="generateDefaultFlavorReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="generateDefaultFlavorTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="generateDefaultFlavorTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the Debug build for flavor DefaultFlavor" />
@@ -401,7 +448,7 @@
               <ExternalTaskPojo>
                 <option name="description" value="Installs the Test build for the DefaultFlavorDebug build" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="installDefaultFlavorTest" />
+                <option name="name" value="installDefaultFlavorDebugTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on all variants." />
@@ -409,16 +456,14 @@
                 <option name="name" value="lint" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the DefaultFlavorDebug build" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="lintDefaultFlavorDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the DefaultFlavorRelease build" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="lintDefaultFlavorRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="lintDefaultFlavorTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
@@ -430,6 +475,14 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="mergeDefaultFlavorDebugTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="mergeDefaultFlavorDebugTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="mergeDefaultFlavorReleaseAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -438,23 +491,15 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="mergeDefaultFlavorTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="mergeDefaultFlavorTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="packageDefaultFlavorDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="packageDefaultFlavorRelease" />
+                <option name="name" value="packageDefaultFlavorDebugTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="packageDefaultFlavorTest" />
+                <option name="name" value="packageDefaultFlavorRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
@@ -466,11 +511,19 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="preDefaultFlavorDebugTestBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="preDefaultFlavorReleaseBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="preDefaultFlavorTestBuild" />
+                <option name="name" value="preDexDefaultFlavorDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="preDexDefaultFlavorDebugTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
@@ -478,11 +531,11 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="prepareDefaultFlavorReleaseDependencies" />
+                <option name="name" value="prepareDefaultFlavorDebugTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="prepareDefaultFlavorTestDependencies" />
+                <option name="name" value="prepareDefaultFlavorReleaseDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
@@ -498,6 +551,18 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="processDefaultFlavorDebugTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="processDefaultFlavorDebugTestManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="processDefaultFlavorDebugTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="processDefaultFlavorReleaseJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -507,18 +572,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="processDefaultFlavorReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="processDefaultFlavorTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="processDefaultFlavorTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="processDefaultFlavorTestTestManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
@@ -540,14 +593,14 @@
                 <option name="name" value="uninstallDefaultFlavorDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Test build for the DefaultFlavorDebug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
+                <option name="name" value="uninstallDefaultFlavorDebugTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the Release build for flavor DefaultFlavor" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
                 <option name="name" value="uninstallDefaultFlavorRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Test build for the DefaultFlavorDebug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
-                <option name="name" value="uninstallDefaultFlavorTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/TopUV" />
@@ -567,23 +620,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/LoginService.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/com/if26/topuv/json/JSONParser.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/JSONParser.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/header_gradient.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/MainActivity.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/json/JSONParser.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/login/LoginService.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/MainActivity.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/LoginService.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/values/themes.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/CategoriesActivity.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_categories.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/drawable/icon_select.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_culture_technologie_select.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_connaissances_scientifiques_select.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_expression_communication_select.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_top_select.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_flop_select.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_stages_select.xml" />
@@ -597,8 +633,6 @@
         <option value="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_rechercher.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_mes_uv_select.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_rechercher_select.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/categories_page.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/tab_page.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/LoginFragment.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_list_uv.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Student.java" />
@@ -606,17 +640,37 @@
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/ListService.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/IntentConstants.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/ListActivity.java" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Uv.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/list_uv.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_search.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/SearchActivity.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/search_page.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/TopUV/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java" />
         <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/SearchFragment.java" />
+        <option value="$PROJECT_DIR$/TopUV/build.gradle" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_description.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_details.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_comments.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/DetailsActivity.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/DescriptionActivity.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/CommentsActivity.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/comments_page.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CommentsFragment.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/TabActivity.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/TabDefinition.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/SimpleTabDefinition.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/activity_tab_page.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/tab_page.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/TabFragment.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DetailsFragment.java" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/categories_page.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/details_page.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/res/layout/description_page.xml" />
+        <option value="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DescriptionFragment.java" />
       </list>
     </option>
   </component>
@@ -670,8 +724,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -984,6 +1036,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -999,21 +1053,21 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="111" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="110" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="113" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="112" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="116" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="115" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="910" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="111" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="110" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="113" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="112" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="116" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="115" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="910" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="vcs.Git" />
@@ -1023,11 +1077,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TopUV/src/main/res/layout" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/TopUV/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/TopUV/src/main/res/drawable-hdpi" />
       <recent name="$PROJECT_DIR$/TopUV/src/main/res/values" />
-      <recent name="$PROJECT_DIR$/TopUV/src/main/res/drawable-xhdpi" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.if26.topuv" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/TopUV/src/main/res/drawable-hdpi/categories_icon" />
@@ -1035,9 +1092,6 @@
       <recent name="$PROJECT_DIR$/TopUV/src/main/res/drawable-xhdpi" />
       <recent name="$PROJECT_DIR$/TopUV/src/main/res/images" />
       <recent name="$PROJECT_DIR$/TopUV/src/main" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.if26.topuv" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.TopUV-TopUV">
@@ -1078,6 +1132,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1103,19 +1170,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1247,7 +1301,11 @@
       <created>1387832485753</created>
       <updated>1387832485753</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update Project&#10;Added new Search class, activity and layout">
+      <created>1388061681762</created>
+      <updated>1388061681762</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1257,29 +1315,29 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39911634" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1301,124 +1359,72 @@
     <MESSAGE value="Java class updates (constant class)&#10;New Classes and new display : the categories page&#10;and all the files going with categories page&#10;Plus new visual style&#10;" />
     <MESSAGE value="Update Java classes&#10;Add ListUv system display (new Layout, Activity)&#10;Starting TabDisplay (new Layout)&#10;Add new server files to get Uvs&#10;Update Menu Display (adding 2 new buttons, search and mes Uvs)" />
     <MESSAGE value="Update Server&#10;New Server : Hostinger Server&#10;Localhost problems solved&#10;Changed access to new server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Server&#10;New Server : Hostinger Server&#10;Localhost problems solved&#10;Changed access to new server" />
+    <MESSAGE value="Update Project&#10;Added new Search class, activity and layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Project&#10;Added new Search class, activity and layout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TopUV/build.gradle">
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_tab_page.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645" />
+        <state line="7" column="57" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/proguard-rules.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="651" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/TopUV-TopUV.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1440" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/TabFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="303" selection-end="303" vertical-scroll-proportion="0.225" vertical-offset="0" max-vertical-offset="400">
+        <state line="52" column="44" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/menu/main.xml">
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="427">
+        <state line="108" column="39" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_flop_select.xml">
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DescriptionFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="567" selection-end="567" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_stages_select.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="112" selection-start="560" selection-end="560" vertical-scroll-proportion="0.21077283" vertical-offset="0" max-vertical-offset="427" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_management_entreprise_select.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="127" selection-start="620" selection-end="620" vertical-scroll-proportion="0.2173913" vertical-offset="0" max-vertical-offset="414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_expression_communication_select.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="130" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_culture_technologie_select.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_connaissances_scientifiques_select.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="659" selection-end="659" vertical-scroll-proportion="0.2536232" vertical-offset="0" max-vertical-offset="414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_technologie_methode_select.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="631" selection-end="631" vertical-scroll-proportion="0.2536232" vertical-offset="0" max-vertical-offset="414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_top_select.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="563" selection-end="563" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_autres_select.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="0" selection-end="575" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_mes_uv_select.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="575" selection-end="575" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="427" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/drawable/img_cat_rechercher_select.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/categories_page.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="84" column="57" selection-start="3172" selection-end="3172" vertical-scroll-proportion="0.0" vertical-offset="1070" max-vertical-offset="1500">
+        <state line="14" column="51" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/tab_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/description_page.xml">
+      <provider editor-type-id="text-editor">
+        <state line="27" column="35" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state line="40" column="29" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="810">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_tab_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="57" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="195">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Category.java">
@@ -1442,26 +1448,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="299" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/CategoriesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="5" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_list_uv.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="52" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
@@ -1503,13 +1492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Uv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.6323185" vertical-offset="0" max-vertical-offset="427">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/os/AsyncTask.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840" />
@@ -1520,21 +1502,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="427" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/ListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="208" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_categories.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="304" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/SearchActivity.java">
@@ -1547,99 +1522,39 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_search.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="56" selection-start="296" selection-end="296" vertical-scroll-proportion="0.1875" vertical-offset="0" max-vertical-offset="400">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/login_page.xml">
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="51" selection-start="3175" selection-end="3647" vertical-scroll-proportion="-10.37037" vertical-offset="995" max-vertical-offset="1455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="51" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="705">
-          <folding>
-            <element signature="e#410#428#0" expanded="true" />
-            <element signature="e#593#611#0" expanded="true" />
-            <element signature="e#940#969#0" expanded="true" />
-            <element signature="e#1087#1113#0" expanded="true" />
-            <element signature="e#1233#1258#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="60" selection-start="279" selection-end="279" vertical-scroll-proportion="0.21077283" vertical-offset="0" max-vertical-offset="427">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/search_page.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="29" selection-start="316" selection-end="316" vertical-scroll-proportion="0.3" vertical-offset="0" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="108" selection-start="771" selection-end="964" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/list_uv.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/list_uv.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="46" selection-start="439" selection-end="439" vertical-scroll-proportion="-5.9259257" vertical-offset="5" max-vertical-offset="405">
+        <state line="11" column="46" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="405">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.3325527" vertical-offset="173" max-vertical-offset="840">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/LoginFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="9" selection-start="2403" selection-end="2403" vertical-scroll-proportion="0.0" vertical-offset="563" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="39" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.0" vertical-offset="998" max-vertical-offset="1560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/SearchFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="975">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1652,7 +1567,200 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/constants/WSConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.15690866" vertical-offset="248" max-vertical-offset="675">
+        <state line="21" column="0" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/SearchFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0" vertical-offset="368" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/ListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="204" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="14" selection-start="425" selection-end="425" vertical-scroll-proportion="0.31615925" vertical-offset="0" max-vertical-offset="427">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/comments_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="426" selection-end="426" vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/LoginFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="5" selection-start="801" selection-end="1279" vertical-scroll-proportion="0.8430913" vertical-offset="0" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_list_uv.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="263" selection-end="263" vertical-scroll-proportion="0.225" vertical-offset="0" max-vertical-offset="400">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="43" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.913349" vertical-offset="180" max-vertical-offset="945">
+          <folding>
+            <element signature="e#410#428#0" expanded="true" />
+            <element signature="e#593#611#0" expanded="true" />
+            <element signature="e#940#969#0" expanded="true" />
+            <element signature="e#1087#1113#0" expanded="true" />
+            <element signature="e#1233#1258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CommentsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/models/Uv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.6323185" vertical-offset="0" max-vertical-offset="427">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/ListUv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="54" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.5620609" vertical-offset="375" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/activities/TabActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/CategoriesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="39" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/TabFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="44" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/login_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="39" selection-start="313" selection-end="526" vertical-scroll-proportion="0.4875" vertical-offset="0" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="75" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/activity_tab_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="57" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/categories_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="613" selection-end="613" vertical-scroll-proportion="0.5625" vertical-offset="0" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/tab_page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/details_page.xml">
+      <provider editor-type-id="text-editor">
+        <state line="163" column="51" selection-start="7513" selection-end="7513" vertical-scroll-proportion="0.0" vertical-offset="2135" max-vertical-offset="2580">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/res/layout/description_page.xml">
+      <provider editor-type-id="text-editor">
+        <state line="49" column="70" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DescriptionFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="1" selection-start="935" selection-end="935" vertical-scroll-proportion="0.7728337" vertical-offset="0" max-vertical-offset="427">
           <folding />
         </state>
       </provider>

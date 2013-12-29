@@ -2,15 +2,18 @@ package com.if26.topuv.fragment;
 
 import android.app.ListFragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 
 import com.if26.topuv.R;
+import com.if26.topuv.activities.TabActivity;
 import com.if26.topuv.constants.IntentConstants;
 import com.if26.topuv.models.Uv;
 import com.if26.topuv.services.ListService;
@@ -48,6 +51,17 @@ public class ListUv extends ListFragment {
         }
     }
 
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id)
+    {
+        String token = this.getActivity().getIntent().getStringExtra(IntentConstants.TOKEN);
+        Uv uv = (Uv) this.getListAdapter().getItem(position);
+
+        Intent intent = new Intent(this.getActivity(), TabActivity.class);
+        intent.putExtra(IntentConstants.TOKEN, token);
+
+        this.startActivity(intent);
+    }
 
     private class UvsAdapter extends ArrayAdapter<Uv>
     {
