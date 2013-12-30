@@ -6,7 +6,7 @@ require_once('model/comment.php');
 $parameters = array
 (
         ':token' => null,
-        ':id_uv' => 'IF26'
+        ':id_uv' => null
 );
 foreach($_POST as $key => $value)
 {
@@ -20,12 +20,27 @@ $json = array(
 $configDB = require_once('configDB.php');
 $db = new Database($configDB['dsn'], $configDB['username'], $configDB['password'], $configDB['options']);
 
-$comments = $db->selectSeveral('Comment', 'comment', 'comment.id_uv = :id_uv', array(':id_uv' => $parameters[':id_uv']));
+$student = $db->selectOne('Student', 'student', 'token = :token', array(':token' => $parameters[':token']));
 
-$json = array(
-    'error' => false,
-    'comment' => $comments
-);
+if($student !== false){
 
+	$comments = $db->selectSeveral('Comment', 'comment', 'comment.id_uv = :id_uv', array(':id_uv' => $parameters[':id_uv']));
+
+	if($comments != false){
+
+		foreach ($comments as $comment) {
+			$student = $db->selectOne('Student', 'student', 'id = :id_student', array(':id_student' => $comment->id_student));
+			$student->login = "";
+			$student->password = "";
+			$student->token = "";
+			$comment->student = $student;
+		}
+
+		$json = array(
+	    	'error' => false,
+	    	'comment' => $comments
+		);
+	}
+}
 echo json_encode($json);
 ?>

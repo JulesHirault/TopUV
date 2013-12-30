@@ -54,7 +54,7 @@ public class DescriptionFragment extends Fragment implements View.OnTouchListene
 
         ratingBar.setFocusable(false);
         ratingBar.setOnTouchListener(this);
-        ratingBar.setRating(description.avg_mark / 2);
+        ratingBar.setRating(((float) description.avg_mark) / 4);
 
         if(description.curricula != null){
             prgTextView.setText(description.curricula);

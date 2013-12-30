@@ -1,15 +1,17 @@
 package com.if26.topuv.models;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by Flo on 12/12/2013.
  */
 public class Student {
-    public String id;
+    public int id;
     public String login;
     public String password;
     public String name;
     public String surname;
-    public String picture;
+    public Bitmap picture;
     public String token;
 
     public String getIdentity()

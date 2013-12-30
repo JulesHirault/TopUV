@@ -4,7 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.if26.topuv.R;
+import com.if26.topuv.models.Comment;
 import com.if26.topuv.models.Description;
+
+import java.util.ArrayList;
 
 /**
  * Created by Flo on 27/12/2013.
@@ -12,6 +15,8 @@ import com.if26.topuv.models.Description;
 public class TabActivity extends Activity {
 
     Description description;
+
+    ArrayList<Comment> comments;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +30,14 @@ public class TabActivity extends Activity {
 
     public void setDescription(Description description){
         this.description = description;
+    }
+
+
+    public ArrayList<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(ArrayList<Comment> comments) {
+        this.comments = comments;
     }
 }

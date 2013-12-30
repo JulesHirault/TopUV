@@ -14,9 +14,14 @@ import android.widget.TabHost.TabSpec;
 import com.if26.topuv.R;
 import com.if26.topuv.activities.TabActivity;
 import com.if26.topuv.constants.IntentConstants;
+import com.if26.topuv.models.Comment;
 import com.if26.topuv.models.Description;
+import com.if26.topuv.models.Student;
+import com.if26.topuv.services.CommentsService;
 import com.if26.topuv.services.DescriptionDetailsService;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -62,7 +67,12 @@ public class TabFragment extends Fragment implements OnTabChangeListener {
 
             DescriptionDetailsService descriptionService = new DescriptionDetailsService();
             Description description = descriptionService.execute(token, id_description).get();
+
+            CommentsService commentsService = new CommentsService();
+            ArrayList<Comment> comments = commentsService.execute(token, id_uv).get();
+
             ((TabActivity) this.getActivity()).setDescription(description);
+            ((TabActivity) this.getActivity()).setComments(comments);
 
         }
         catch(InterruptedException interruptedException)
