@@ -29,6 +29,14 @@ class Database
                 return $pdoStatement->fetchAll(PDO::FETCH_CLASS, $class);
         }
 
+        public function selectTop($class, $table, $order)
+        {
+                $sql = "SELECT * FROM $table ORDER BY $order LIMIT 10";
+                $pdoStatement = $this->pdo->prepare($sql);
+                $pdoStatement->execute();
+                return $pdoStatement->fetchAll(PDO::FETCH_CLASS, $class);
+        }
+
         public function insert($model, $table)
         {
                 $fields = '';
