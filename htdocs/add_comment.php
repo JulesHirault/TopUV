@@ -4,9 +4,9 @@ require_once('model/comment.php');
 
 $parameters = array
 (
-        ':text' => 'coucousalutcava',
-		':id_student' => 1,
-		':id_uv' => 'IF26'
+        ':text' => '',
+		':id_student' => '',
+		':id_uv' => ''
 );
 
 foreach($_POST as $key => $value)
@@ -20,5 +20,10 @@ $json = array(
 
 $configDB = require_once('configDB.php');
 $db = new Database($configDB['dsn'], $configDB['username'], $configDB['password'], $configDB['options']);
-$result = $db->insert($parameters, 'Comment');
+
+$comment = new Comment();
+$comment->text = $parameters[":text"];
+$comment->id_student = $parameters[":id_student"];
+$comment->id_uv = $parameters[":id_uv"];
+$result = $db->insert($comment, 'comment');
 ?>
