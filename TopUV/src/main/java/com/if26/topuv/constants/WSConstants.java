@@ -23,7 +23,6 @@ public class WSConstants {
         public static final String ID = "id";
         public static final String LABEL = "label";
         public static final String ID_DESCRIPTION = "id_description";
-        public static final String AVG_MARK = "avg_mark";
         public static final String ID_CATEGORY = "id_category";
 
     }
@@ -34,6 +33,28 @@ public class WSConstants {
 
         public static final String ID = "id";
         public static final String LABEL = "label";
+
+    }
+
+    public static class DESCRIPTION
+    {
+
+        public static final String URI = ROOT + "details.php";
+        public static final String TOKEN = "token";
+        public static final String DESCRIPTION = "description";
+
+        public static final String ID = "id";
+        public static final String CURRICULA = "curricula";
+        public static final String OBJECTIVES = "objectives";
+        public static final String TYPE_UV = "type_uv";
+        public static final String CREDITS = "credits";
+        public static final String AVAILABALITY = "availability";
+        public static final String LECTURES = "lectures";
+        public static final String TUTORIALS = "tutorials";
+        public static final String PRACTICALS = "practicals";
+        public static final String PERSONNAL = "personnal";
+        public static final String AVG_MARK = "avg_mark";
+
 
     }
 }

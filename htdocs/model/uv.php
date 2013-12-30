@@ -4,7 +4,6 @@ class Uv
         public $id;
         public $label;
         public $id_description;
-        public $avg_mark;
         public $id_category;
 
         public $category;

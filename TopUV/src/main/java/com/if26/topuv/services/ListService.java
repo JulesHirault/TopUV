@@ -63,7 +63,6 @@ public class ListService extends AsyncTask<String, Void, ArrayList<Uv>> {
                     uv.id = jsonArray.getJSONObject(index).getString(WSConstants.UVS.ID);
                     uv.label = jsonArray.getJSONObject(index).getString(WSConstants.UVS.LABEL);
                     uv.id_description = jsonArray.getJSONObject(index).getString(WSConstants.UVS.ID_DESCRIPTION);
-                    uv.avg_mark = jsonArray.getJSONObject(index).getString(WSConstants.UVS.AVG_MARK);
                     uv.id_category = jsonArray.getJSONObject(index).getString(WSConstants.UVS.ID_CATEGORY);
 
 

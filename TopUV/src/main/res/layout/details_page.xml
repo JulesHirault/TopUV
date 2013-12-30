@@ -18,13 +18,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Type d'UV"
                 android:id="@+id/typeTitleTextView"
-                android:layout_margin="20dp" />
+                android:layout_margin="20dp"
+                android:textColor="#363e49"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Connaissances Scientifiques"
+                android:text="Non renseigné"
                 android:id="@+id/typeTextView"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="95dp"
@@ -40,13 +41,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Crédits"
                 android:id="@+id/creditsTitleTextView"
-                android:layout_margin="20dp" />
+                android:layout_margin="20dp"
+                android:textColor="#363e49"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="xx"
+                android:text="Non renseigné"
                 android:id="@+id/creditsTextView"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="130dp"
@@ -62,13 +64,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Cours magistral"
                 android:id="@+id/cmTitleTextView"
-                android:layout_margin="20dp" />
+                android:layout_margin="20dp"
+                android:textColor="#363e49"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="xxh"
+                android:text="Non renseigné"
                 android:id="@+id/cmTextView"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="41dp"
@@ -84,13 +87,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Travaux Dirigés"
                 android:id="@+id/tdTitleTextView"
-                android:layout_margin="20dp" />
+                android:layout_margin="20dp"
+                android:textColor="#363e49"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="xxh"
+                android:text="Non renseigné"
                 android:id="@+id/tdTextView"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="45dp"
@@ -106,13 +110,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Travaux Pratiques"
                 android:id="@+id/tpTitleTextView"
-                android:layout_margin="20dp" />
+                android:layout_margin="20dp"
+                android:textColor="#363e49"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="xxh"
+                android:text="Non renseigné"
                 android:id="@+id/tpTextView"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="22dp"
@@ -128,13 +133,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Travaux Personnels"
                 android:id="@+id/tpeTitleTextView"
-                android:layout_margin="20dp" />
+                android:layout_margin="20dp"
+                android:textColor="#363e49"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="xxh"
+                android:text="Non renseigné"
                 android:id="@+id/tpeTextView"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="7dp"
@@ -150,13 +156,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Disponibilité"
                 android:id="@+id/dispoTitleTextView"
-                android:layout_margin="20dp" />
+                android:layout_margin="20dp"
+                android:textColor="#363e49"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Automne et Printemps"
+                android:text="Non renseigné"
                 android:id="@+id/dispoTextView"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="80dp"

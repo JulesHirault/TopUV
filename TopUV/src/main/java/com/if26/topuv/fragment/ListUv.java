@@ -59,6 +59,9 @@ public class ListUv extends ListFragment {
 
         Intent intent = new Intent(this.getActivity(), TabActivity.class);
         intent.putExtra(IntentConstants.TOKEN, token);
+        intent.putExtra(IntentConstants.ID_UV, uv.id);
+        intent.putExtra(IntentConstants.LABEL_UV, uv.label);
+        intent.putExtra(IntentConstants.ID_DESCRIPTION, uv.id_description);
 
         this.startActivity(intent);
     }

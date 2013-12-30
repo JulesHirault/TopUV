@@ -7,7 +7,6 @@ public class Uv {
     public String id;
     public String label;
     public String id_description;
-    public String avg_mark;
     public String id_category;
 
     public Category category;

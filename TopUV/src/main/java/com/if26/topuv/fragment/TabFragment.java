@@ -12,6 +12,12 @@ import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabSpec;
 
 import com.if26.topuv.R;
+import com.if26.topuv.activities.TabActivity;
+import com.if26.topuv.constants.IntentConstants;
+import com.if26.topuv.models.Description;
+import com.if26.topuv.services.DescriptionDetailsService;
+
+import java.util.concurrent.ExecutionException;
 
 /**
  * Created by Flo on 27/12/2013.
@@ -40,6 +46,33 @@ public class TabFragment extends Fragment implements OnTabChangeListener {
         ft.add(R.id.tab3, comments);
 
         return myView;
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState)
+    {
+        super.onActivityCreated(savedInstanceState);
+
+        try
+        {
+            String token = this.getActivity().getIntent().getStringExtra(IntentConstants.TOKEN);
+            String id_description = this.getActivity().getIntent().getStringExtra(IntentConstants.ID_DESCRIPTION);
+            String id_uv = this.getActivity().getIntent().getStringExtra(IntentConstants.ID_UV);
+            String label_uv = this.getActivity().getIntent().getStringExtra(IntentConstants.LABEL_UV);
+
+            DescriptionDetailsService descriptionService = new DescriptionDetailsService();
+            Description description = descriptionService.execute(token, id_description).get();
+            ((TabActivity) this.getActivity()).setDescription(description);
+
+        }
+        catch(InterruptedException interruptedException)
+        {
+
+        }
+        catch(ExecutionException executionException)
+        {
+
+        }
     }
 
     public void initTabs(){
