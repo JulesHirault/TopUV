@@ -34,7 +34,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d3b997b-e0f1-43f9-91bf-03b3326b16c3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/add_comment.php" afterPath="$PROJECT_DIR$/htdocs/add_comment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TopUV.iws" />
@@ -137,7 +136,7 @@
       <file leaf-file-name="add_comment.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/htdocs/add_comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="43" selection-start="640" selection-end="640" vertical-scroll-proportion="0.88616073" vertical-offset="62" max-vertical-offset="578">
+            <state line="18" column="2" selection-start="289" selection-end="289" vertical-scroll-proportion="0.39285713" vertical-offset="130" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -1332,7 +1331,11 @@
       <created>1388443065448</created>
       <updated>1388443065448</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;local.properties&#10;">
+      <created>1388444725638</created>
+      <updated>1388444725638</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1773,7 +1776,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/add_comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="43" selection-start="640" selection-end="640" vertical-scroll-proportion="0.88616073" vertical-offset="62" max-vertical-offset="578">
+        <state line="18" column="2" selection-start="289" selection-end="289" vertical-scroll-proportion="0.39285713" vertical-offset="130" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
