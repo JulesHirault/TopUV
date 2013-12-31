@@ -8,5 +8,7 @@
     <string name="activity_search">  TopUV : Recherche</string>
     <string name="tab_title_1">Tab 1</string>
     <string name="tab_title_2">Tab 2</string>
+    <string name="action_send">Noter</string>
+    <string name="action_menu">Menu</string>
 
 </resources>

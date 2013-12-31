@@ -1,9 +1,14 @@
 package com.if26.topuv.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import com.if26.topuv.R;
+import com.if26.topuv.constants.IntentConstants;
 import com.if26.topuv.models.Comment;
 import com.if26.topuv.models.Description;
 
@@ -39,5 +44,32 @@ public class TabActivity extends Activity {
 
     public void setComments(ArrayList<Comment> comments) {
         this.comments = comments;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_activity_actions, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.action_send:
+                return true;
+            case R.id.action_menu:
+                Intent intent = new Intent(this, CategoriesActivity.class);
+                String token = this.getIntent().getStringExtra(IntentConstants.TOKEN);
+                intent.putExtra(IntentConstants.TOKEN, token);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                this.startActivity(intent);
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

@@ -1,27 +1,22 @@
 package com.if26.topuv.fragment;
 
+import android.app.ActionBar;
 import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
-import android.widget.TabHost.TabSpec;
 
 import com.if26.topuv.R;
 import com.if26.topuv.activities.TabActivity;
 import com.if26.topuv.constants.IntentConstants;
 import com.if26.topuv.models.Comment;
 import com.if26.topuv.models.Description;
-import com.if26.topuv.models.Student;
 import com.if26.topuv.services.CommentsService;
 import com.if26.topuv.services.DescriptionDetailsService;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -30,25 +25,40 @@ import java.util.concurrent.ExecutionException;
 public class TabFragment extends Fragment implements OnTabChangeListener {
 
     private View myView;
-    private TabHost myTabHost;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         myView = inflater.inflate(R.layout.tab_page, container, false);
-        myTabHost = (TabHost) myView.findViewById(R.id.tabHost);
-        initTabs();
 
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.commit();
 
-        DescriptionFragment description = new DescriptionFragment();
-        DetailsFragment details = new DetailsFragment();
-        CommentsFragment comments = new CommentsFragment();
-        ft.add(R.id.tab1, description);
-        ft.add(R.id.tab2, details);
-        ft.add(R.id.tab3, comments);
+        // Notice that setContentView() is not used, because we use the root
+        // android.R.id.content as the container for each fragment
+
+        // setup action bar for tabs
+        ActionBar actionBar = this.getActivity().getActionBar();
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        actionBar.setDisplayShowTitleEnabled(true);
+
+        ActionBar.Tab tab = actionBar.newTab()
+                .setText("Description")
+                .setTabListener(new TabListener<DescriptionFragment>(
+                        this.getActivity(), "Description", DescriptionFragment.class));
+        actionBar.addTab(tab);
+
+        tab = actionBar.newTab()
+                .setText("Details")
+                .setTabListener(new TabListener<DetailsFragment>(
+                        this.getActivity(), "album", DetailsFragment.class));
+        actionBar.addTab(tab);
+
+        tab = actionBar.newTab()
+                .setText("Commentaires")
+                .setTabListener(new TabListener<CommentsFragment>(
+                        this.getActivity(), "album", CommentsFragment.class));
+        actionBar.addTab(tab);
 
         return myView;
     }
@@ -85,24 +95,6 @@ public class TabFragment extends Fragment implements OnTabChangeListener {
         }
     }
 
-    public void initTabs(){
-        myTabHost.setup();
-        TabSpec descriptionSpec = myTabHost.newTabSpec("Description");
-        descriptionSpec.setContent(R.id.tab1);
-        descriptionSpec.setIndicator("Description");
-
-        TabSpec detailsSpec = myTabHost.newTabSpec("Details");
-        detailsSpec.setContent(R.id.tab2);
-        detailsSpec.setIndicator("Details");
-
-        TabSpec commentsSpec = myTabHost.newTabSpec("Commentaires");
-        commentsSpec.setContent(R.id.tab3);
-        commentsSpec.setIndicator("Commentaires");
-
-        myTabHost.addTab(descriptionSpec);
-        myTabHost.addTab(detailsSpec);
-        myTabHost.addTab(commentsSpec);
-    }
 
     @Override
     public void onTabChanged(String s) {

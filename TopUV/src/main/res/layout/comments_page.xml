@@ -26,9 +26,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Name Surname"
                 android:id="@+id/studentName"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:text="Aucun Commentaire"/>
 
             <RatingBar
                 android:layout_width="wrap_content"
@@ -47,14 +47,6 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp" />
-
-    <TextView
-        android:id="@android:id/empty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="" />
+        android:layout_marginRight="20dp"/>
 
 </LinearLayout>
