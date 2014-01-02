@@ -88,4 +88,5 @@ class Database
                 return $pdoStatement->execute($whereArgs);
         }
 }
+
 ?>
