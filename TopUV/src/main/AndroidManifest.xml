@@ -45,6 +45,10 @@
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.Actionbarstyle" >
         </activity>
+        <activity
+            android:name=".activities.AddCommentActivity"
+            android:label="@string/activity_add_comment">
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

@@ -70,6 +70,7 @@ public class WSConstants {
     public static class COMMENT
     {
         public static final String URI = ROOT + "comment.php";
+        public static final String URI2 = ROOT + "add_comment.php";
         public static final String TOKEN = "token";
         public static final String COMMENT = "comment";
         public static final String COMMENTS = "comments";

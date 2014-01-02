@@ -35,7 +35,8 @@ if($student !== false)
         {
                 $json = array(
                         'error' => false,
-                        'token' => $token
+                        'token' => $token,
+                        'id' => $student->id
                 );
         }
 }

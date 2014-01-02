@@ -2,6 +2,7 @@ package com.if26.topuv.fragment;
 
 import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +26,7 @@ import java.util.concurrent.ExecutionException;
 public class TabFragment extends Fragment implements OnTabChangeListener {
 
     private View myView;
+    private Context context;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,7 +34,7 @@ public class TabFragment extends Fragment implements OnTabChangeListener {
 
 
         myView = inflater.inflate(R.layout.tab_page, container, false);
-
+        context = this.getActivity();
 
         // Notice that setContentView() is not used, because we use the root
         // android.R.id.content as the container for each fragment
@@ -73,12 +75,11 @@ public class TabFragment extends Fragment implements OnTabChangeListener {
             String token = this.getActivity().getIntent().getStringExtra(IntentConstants.TOKEN);
             String id_description = this.getActivity().getIntent().getStringExtra(IntentConstants.ID_DESCRIPTION);
             String id_uv = this.getActivity().getIntent().getStringExtra(IntentConstants.ID_UV);
-            String label_uv = this.getActivity().getIntent().getStringExtra(IntentConstants.LABEL_UV);
 
-            DescriptionDetailsService descriptionService = new DescriptionDetailsService();
+            DescriptionDetailsService descriptionService = new DescriptionDetailsService(context);
             Description description = descriptionService.execute(token, id_description).get();
 
-            CommentsService commentsService = new CommentsService();
+            CommentsService commentsService = new CommentsService(context);
             ArrayList<Comment> comments = commentsService.execute(token, id_uv).get();
 
             ((TabActivity) this.getActivity()).setDescription(description);

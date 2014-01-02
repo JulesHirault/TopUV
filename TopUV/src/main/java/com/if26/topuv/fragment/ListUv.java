@@ -26,6 +26,8 @@ import java.util.concurrent.ExecutionException;
  */
 public class ListUv extends ListFragment {
 
+    private Context context;
+
     @Override
     public void onActivityCreated(Bundle savedInstanceState)
     {
@@ -33,10 +35,11 @@ public class ListUv extends ListFragment {
 
         try
         {
+            context = this.getActivity();
             String token = this.getActivity().getIntent().getStringExtra(IntentConstants.TOKEN);
             String id_category = this.getActivity().getIntent().getStringExtra(IntentConstants.ID_CATEGORY);
 
-            ListService listService = new ListService();
+            ListService listService = new ListService(context);
             ArrayList<Uv> uvs = listService.execute(token, id_category).get();
 
             this.setListAdapter(new UvsAdapter(this.getActivity(), uvs));
@@ -55,10 +58,12 @@ public class ListUv extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id)
     {
         String token = this.getActivity().getIntent().getStringExtra(IntentConstants.TOKEN);
+        String student_id = this.getActivity().getIntent().getStringExtra(IntentConstants.STUDENT_ID);
         Uv uv = (Uv) this.getListAdapter().getItem(position);
 
         Intent intent = new Intent(this.getActivity(), TabActivity.class);
         intent.putExtra(IntentConstants.TOKEN, token);
+        intent.putExtra(IntentConstants.STUDENT_ID, student_id);
         intent.putExtra(IntentConstants.ID_UV, uv.id);
         intent.putExtra(IntentConstants.LABEL_UV, uv.label);
         intent.putExtra(IntentConstants.ID_DESCRIPTION, uv.id_description);

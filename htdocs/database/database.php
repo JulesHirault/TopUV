@@ -1,91 +1,94 @@
-<?php  
-class Database
-{
-        private $pdo;
-
-        public function Database($dsn, $username, $password, $options = null)
+        <?php  
+        class Database
         {
-                $this->pdo = new PDO($dsn, $username, $password, $options);
-        }
+                private $pdo;
 
-        public function selectOne($class, $table, $where, $whereArgs = array(), $order = null)
-        {
-                $sql = "SELECT * FROM $table WHERE $where";
-                if($order != null)
+                public function Database($dsn, $username, $password, $options = null)
                 {
-                        $sql .= " ORDER BY $order";
+                        $this->pdo = new PDO($dsn, $username, $password, $options);
                 }
-                $sql .= ' LIMIT 1';
-                $pdoStatement = $this->pdo->prepare($sql);
-                $pdoStatement->execute($whereArgs);
-                return $pdoStatement->fetchObject($class);
-        }
 
-        public function selectSeveral($class, $table, $where, $whereArgs = array())
-        {
-                $sql = "SELECT * FROM $table WHERE $where";
-                $pdoStatement = $this->pdo->prepare($sql);
-                $pdoStatement->execute($whereArgs);
-                return $pdoStatement->fetchAll(PDO::FETCH_CLASS, $class);
-        }
-
-        public function selectTop($class, $table, $order)
-        {
-                $sql = "SELECT * FROM $table ORDER BY $order LIMIT 10";
-                $pdoStatement = $this->pdo->prepare($sql);
-                $pdoStatement->execute();
-                return $pdoStatement->fetchAll(PDO::FETCH_CLASS, $class);
-        }
-
-        public function insert($model, $table)
-        {
-                $fields = '';
-                $values = '';
-                $whereArgs = array();
-                foreach($model->toDB() as $name => $value)
+                public function selectOne($class, $table, $where, $whereArgs = array(), $order = null)
                 {
-                        if($fields != '')
+                        $sql = "SELECT * FROM $table WHERE $where";
+                        if($order != null)
                         {
-                                $fields .= ', ';
-                                $values .= ', ';
+                                $sql .= " ORDER BY $order";
                         }
-                        $fields .= $name;
-                        $values .= ":$name";
-                        $whereArgs[":$name"] = $value;
+                        $sql .= ' LIMIT 1';
+                        $pdoStatement = $this->pdo->prepare($sql);
+                        $pdoStatement->execute($whereArgs);
+                        return $pdoStatement->fetchObject($class);
                 }
-                $sql = "INSERT INTO $table ($fields) VALUES ($values)";
-                $pdoStatement = $this->pdo->prepare($sql);
-                $result = $pdoStatement->execute($whereArgs);
-                if(!$result)
+
+                public function selectSeveral($class, $table, $where, $whereArgs = array())
                 {
-                        return false;
+                        $sql = "SELECT * FROM $table WHERE $where";
+                        $pdoStatement = $this->pdo->prepare($sql);
+                        $pdoStatement->execute($whereArgs);
+                        return $pdoStatement->fetchAll(PDO::FETCH_CLASS, $class);
                 }
-                return $this->pdo->lastInsertId();
 
-        }
-
-        public function update($model, $table, $where, $whereArgs = array())
-        {
-                $set = '';
-                foreach($model as $name => $value)
+                public function selectTop($class, $table, $order)
                 {
-                        if($set != '')
+                        $sql = "SELECT * FROM $table ORDER BY $order LIMIT 10";
+                        $pdoStatement = $this->pdo->prepare($sql);
+                        $pdoStatement->execute();
+                        return $pdoStatement->fetchAll(PDO::FETCH_CLASS, $class);
+                }
+
+                public function insert($model, $table)
+                {
+                        $fields = '';
+                        $values = '';
+                        $whereArgs = array();
+                        foreach($model->toDatabase() as $name => $value)
                         {
-                                $set .= ', ';
+                                if($fields != '')
+                                {
+                                        $fields .= ', ';
+                                        $values .= ', ';
+                                }
+                                $fields .= $name;
+                                $values .= ":$name";
+                                $whereArgs[":$name"] = $value;
                         }
-                        $set .= "$name = :$name";
-                        $whereArgs[":$name"] = $value;
-                }
-                $sql = "UPDATE $table SET $set WHERE $where";
-                $pdoStatement = $this->pdo->prepare($sql);
-                return $pdoStatement->execute($whereArgs);
-        }
+                        $sql = "INSERT INTO $table ($fields) VALUES ($values)";
+                        $pdoStatement = $this->pdo->prepare($sql);
+                        $result = $pdoStatement->execute($whereArgs);
+                        if(!$result)
+                        {
+                                return false;
+                        }
+                        return $this->pdo->lastInsertId();
 
-        public function delete($table, $where, $whereArgs = array())
-        {
-                $sql = "DELETE FROM $table WHERE $where";
-                $pdoStatement = $this->pdo->prepare($sql);
-                return $pdoStatement->execute($whereArgs);
+                }
+
+                public function update($model, $table, $where, $whereArgs = array())
+                {
+                        $set = '';
+                        foreach($model as $name => $value)
+                        {
+                                if($set != '')
+                                {
+                                        $set .= ', ';
+                                }
+                                
+                                $set .= "$name = :$name";
+                                $whereArgs[":$name"] = $value;
+                        }
+                        $sql = "UPDATE $table SET $set WHERE $where";
+                        $pdoStatement = $this->pdo->prepare($sql);
+                        return $pdoStatement->execute($whereArgs);
+                        
+                }
+
+
+                public function delete($table, $where, $whereArgs = array())
+                {
+                        $sql = "DELETE FROM $table WHERE $where";
+                        $pdoStatement = $this->pdo->prepare($sql);
+                        return $pdoStatement->execute($whereArgs);
+                }
         }
-}
-?>
+        ?>

@@ -1,6 +1,5 @@
 package com.if26.topuv.services;
 
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
@@ -24,33 +23,42 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
- * Created by Flo on 29/11/2013.
+ * Created by Flo on 02/01/2014.
  */
-public class LoginService extends AsyncTask<String, Void, String[]> {
+public class AddCommentService extends AsyncTask<String, Void, String> {
+
     Context context;
     ProgressDialog progDialog;
 
-    public LoginService(Context context){
+    public AddCommentService(Context context){
         this.context = context;
     }
 
     @Override
-    protected String[] doInBackground(String... args) {
-        String login = args[0];
-        String password = args[1];
+    protected String doInBackground(String... args) {
+        String token = args[0];
+        String mark = args[1];
+        String id_student = args[2];
+        String id_uv = args[3];
+        String text = args[4];
+        String id_description = args[5];
 
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
-        String[] result = new String[2];
+
         // Making HTTP request
         try {
 
-            HttpPost httpPost = new HttpPost(WSConstants.LOGIN.URI);
+            HttpPost httpPost = new HttpPost(WSConstants.COMMENT.URI2);
             // defaultHttpClient
             DefaultHttpClient httpClient = new DefaultHttpClient();
 
 
-            nameValuePairs.add(new BasicNameValuePair(WSConstants.LOGIN.LOGIN, login));
-            nameValuePairs.add(new BasicNameValuePair(WSConstants.LOGIN.PASSWORD, password));
+            nameValuePairs.add(new BasicNameValuePair(WSConstants.COMMENT.TOKEN, token));
+            nameValuePairs.add(new BasicNameValuePair(WSConstants.COMMENT.TEXT, text));
+            nameValuePairs.add(new BasicNameValuePair(WSConstants.COMMENT.ID_STUDENT, id_student));
+            nameValuePairs.add(new BasicNameValuePair(WSConstants.COMMENT.ID_UV, id_uv));
+            nameValuePairs.add(new BasicNameValuePair(WSConstants.COMMENT.MARK, mark));
+            nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.ID_DESCRIPTION, id_description));
 
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
@@ -58,9 +66,7 @@ public class LoginService extends AsyncTask<String, Void, String[]> {
             String response = EntityUtils.toString(httpResponse.getEntity());
 
             JSONObject jsonObject = new JSONObject(response);
-            result[0] = jsonObject.getString(WSConstants.LOGIN.TOKEN);
-            result[1] = jsonObject.getString(WSConstants.STUDENT.ID);
-            return result;
+            return jsonObject.getString("result");
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -87,7 +93,7 @@ public class LoginService extends AsyncTask<String, Void, String[]> {
     }
 
     @Override
-    protected void onPostExecute(String[] unused) {
+    protected void onPostExecute(String unused) {
         super.onPostExecute(unused);
         progDialog.dismiss();
     }
