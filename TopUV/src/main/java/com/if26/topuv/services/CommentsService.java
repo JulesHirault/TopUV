@@ -1,5 +1,7 @@
 package com.if26.topuv.services;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -33,6 +35,13 @@ import java.util.ArrayList;
  * Created by Flo on 30/12/2013.
  */
 public class CommentsService extends AsyncTask<String, Void, ArrayList<Comment>> {
+    Context context;
+    ProgressDialog progDialog;
+
+    public CommentsService(Context context){
+        this.context = context;
+    }
+
     @Override
     protected ArrayList<Comment> doInBackground(String... args) {
         String token = args[0];
@@ -110,5 +119,23 @@ public class CommentsService extends AsyncTask<String, Void, ArrayList<Comment>>
         is.close();
 
         return bm;
+    }
+
+
+    @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+        progDialog = new ProgressDialog(this.context);
+        progDialog.setMessage("Loading...");
+        progDialog.setIndeterminate(false);
+        progDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        progDialog.setCancelable(true);
+        progDialog.show();
+    }
+
+    @Override
+    protected void onPostExecute(ArrayList unused) {
+        super.onPostExecute(unused);
+        progDialog.dismiss();
     }
 }

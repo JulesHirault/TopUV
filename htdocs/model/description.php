@@ -6,7 +6,7 @@ class Description
         public $objectives;
         public $type_uv;
         public $credits;
-        public $availibility;
+        public $availability;
         public $lectures;
         public $tutorials;
         public $practicals;

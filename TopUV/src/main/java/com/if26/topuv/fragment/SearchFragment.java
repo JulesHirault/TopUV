@@ -1,6 +1,7 @@
 package com.if26.topuv.fragment;
 
 import android.app.Fragment;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,6 +23,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
 
     private EditText searchText;
     private Button searchButton;
+    private Context context;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,6 +32,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
         searchText = (EditText) v.findViewById(R.id.searchField);
         searchButton = (Button) v.findViewById(R.id.searchButton);
         searchButton.setOnClickListener(this);
+        context = this.getActivity();
 
         return v;
     }
@@ -54,6 +57,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
         intent.putExtra(IntentConstants.ID_CATEGORY, id_category);
         intent.putExtra(IntentConstants.TOKEN, token);
         this.startActivity(intent);
+
     }
 
 }

@@ -1,6 +1,7 @@
 package com.if26.topuv.fragment;
 
 import android.app.Fragment;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,12 +11,10 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.if26.topuv.R;
-import com.if26.topuv.activities.CategoriesActivity;
 import com.if26.topuv.activities.ListActivity;
 import com.if26.topuv.activities.SearchActivity;
 import com.if26.topuv.constants.IntentConstants;
 
-import java.util.concurrent.ExecutionException;
 
 /**
  * Created by Flo on 13/12/2013.
@@ -23,6 +22,7 @@ import java.util.concurrent.ExecutionException;
 public class CategoriesFragment extends Fragment implements View.OnClickListener {
 
     private ImageView CS, TM, ME, CT, EC, Stages, Autre, Top, Flop, MesUV, Search;
+    private Context context;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -50,6 +50,7 @@ public class CategoriesFragment extends Fragment implements View.OnClickListener
         Flop.setOnClickListener(this);
         Search.setOnClickListener(this);
         MesUV.setOnClickListener(this);
+        context = this.getActivity();
 
         return v;
     }
@@ -57,57 +58,46 @@ public class CategoriesFragment extends Fragment implements View.OnClickListener
     @Override
     public void onClick(View view) {
         String token = this.getActivity().getIntent().getStringExtra(IntentConstants.TOKEN);
+        String student_id = this.getActivity().getIntent().getStringExtra(IntentConstants.STUDENT_ID);
+        Intent intent = null;
 
         if(view == CS){
-            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent = new Intent(this.getActivity(), ListActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "1");
-            intent.putExtra(IntentConstants.TOKEN, token);
-            this.startActivity(intent);
         } else if(view == TM) {
-            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent = new Intent(this.getActivity(), ListActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "2");
-            intent.putExtra(IntentConstants.TOKEN, token);
-            this.startActivity(intent);
         } else if(view == ME) {
-            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent = new Intent(this.getActivity(), ListActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "4");
-            intent.putExtra(IntentConstants.TOKEN, token);
-            this.startActivity(intent);
         } else if(view == CT) {
-            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent = new Intent(this.getActivity(), ListActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "3");
-            intent.putExtra(IntentConstants.TOKEN, token);
-            this.startActivity(intent);
         } else if(view == EC) {
-            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent = new Intent(this.getActivity(), ListActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "5");
-            intent.putExtra(IntentConstants.TOKEN, token);
-            this.startActivity(intent);
         } else if(view == Stages) {
-            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent = new Intent(this.getActivity(), ListActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "6");
-            intent.putExtra(IntentConstants.TOKEN, token);
-            this.startActivity(intent);
         } else if(view == Autre) {
-            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent = new Intent(this.getActivity(), ListActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "7");
-            intent.putExtra(IntentConstants.TOKEN, token);
-            this.startActivity(intent);
         } else if(view == Top) {
             Toast.makeText(getActivity().getBaseContext(), "Get Top List", Toast.LENGTH_SHORT).show();
         } else if(view == Flop) {
             Toast.makeText(getActivity().getBaseContext(), "Get Flop List", Toast.LENGTH_SHORT).show();
         } else if(view == MesUV) {
-            Intent intent = new Intent(this.getActivity(), ListActivity.class);
+            intent = new Intent(this.getActivity(), ListActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "0");
-            intent.putExtra(IntentConstants.TOKEN, token);
-            this.startActivity(intent);
         } else if(view == Search) {
-            Intent intent = new Intent(this.getActivity(), SearchActivity.class);
+            intent = new Intent(this.getActivity(), SearchActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "8");
-            intent.putExtra(IntentConstants.TOKEN, token);
-            this.startActivity(intent);
         }
+        intent.putExtra(IntentConstants.STUDENT_ID, student_id);
+        intent.putExtra(IntentConstants.TOKEN, token);
+        this.startActivity(intent);
+
+
     }
 
 }

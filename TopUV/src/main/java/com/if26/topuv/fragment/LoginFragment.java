@@ -1,6 +1,7 @@
 package com.if26.topuv.fragment;
 
 import android.app.Fragment;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -28,6 +29,7 @@ public class LoginFragment extends Fragment implements OnClickListener {
 
     private EditText login, password;
     private Button loginButton;
+    private Context context;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,6 +39,7 @@ public class LoginFragment extends Fragment implements OnClickListener {
         password = (EditText) v.findViewById(R.id.pwdField);
         loginButton = (Button) v.findViewById(R.id.loginButton);
         loginButton.setOnClickListener(this);
+        context = this.getActivity();
 
         return v;
     }
@@ -55,16 +58,19 @@ public class LoginFragment extends Fragment implements OnClickListener {
             return;
         }
 
-        LoginService loginService = new LoginService();
+        LoginService loginService = new LoginService(context);
         try
         {
-            String token = loginService.execute(login.getText().toString(), password.getText().toString()).get();
+            String[] result = loginService.execute(login.getText().toString(), password.getText().toString()).get();
+            String token = result[0];
+            String student_id = result[1];
 
             if(token == null){
                 Toast.makeText(getActivity().getBaseContext(), "Login Failed :( !", Toast.LENGTH_SHORT).show();
             } else if(token != null){
                 Intent intent = new Intent(this.getActivity(), CategoriesActivity.class);
                 intent.putExtra(IntentConstants.TOKEN, token);
+                intent.putExtra(IntentConstants.STUDENT_ID, student_id);
                 this.startActivity(intent);
             } else {
                 Toast.makeText(getActivity().getBaseContext(), "Something else wrong", Toast.LENGTH_SHORT).show();

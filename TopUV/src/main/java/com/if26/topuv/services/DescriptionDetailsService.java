@@ -1,5 +1,7 @@
 package com.if26.topuv.services;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.AsyncTask;
 
 import com.if26.topuv.constants.WSConstants;
@@ -25,6 +27,13 @@ import java.util.ArrayList;
  * Created by Flo on 29/12/2013.
  */
 public class DescriptionDetailsService extends AsyncTask<String, Void, Description> {
+
+    Context context;
+    ProgressDialog progDialog;
+
+    public DescriptionDetailsService(Context context){
+        this.context = context;
+    }
 
     @Override
     protected Description doInBackground(String... args) {
@@ -76,4 +85,21 @@ public class DescriptionDetailsService extends AsyncTask<String, Void, Descripti
         return description;
     }
 
+
+    @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+        progDialog = new ProgressDialog(this.context);
+        progDialog.setMessage("Loading...");
+        progDialog.setIndeterminate(false);
+        progDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        progDialog.setCancelable(true);
+        progDialog.show();
+    }
+
+    @Override
+    protected void onPostExecute(Description unused) {
+        super.onPostExecute(unused);
+        progDialog.dismiss();
+    }
 }
