@@ -53,11 +53,14 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
 
         String token = this.getActivity().getIntent().getStringExtra(IntentConstants.TOKEN);
         String id_category = this.getActivity().getIntent().getStringExtra(IntentConstants.ID_CATEGORY);
+        String student_id = this.getActivity().getIntent().getStringExtra(IntentConstants.STUDENT_ID);
         Intent intent = new Intent(this.getActivity(), ListActivity.class);
         intent.putExtra(IntentConstants.ID_CATEGORY, id_category);
+        intent.putExtra(IntentConstants.ID_UV, searchText.getText().toString());
+        intent.putExtra(IntentConstants.STUDENT_ID, student_id);
         intent.putExtra(IntentConstants.TOKEN, token);
         this.startActivity(intent);
-
+        this.getActivity().finish();
     }
 
 }

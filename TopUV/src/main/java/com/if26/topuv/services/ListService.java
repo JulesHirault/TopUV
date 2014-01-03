@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 
+import com.if26.topuv.constants.IntentConstants;
 import com.if26.topuv.constants.WSConstants;
 import com.if26.topuv.models.Category;
 import com.if26.topuv.models.Uv;
@@ -40,6 +41,7 @@ public class ListService extends AsyncTask<String, Void, ArrayList<Uv>> {
     protected ArrayList<Uv> doInBackground(String... args) {
         String token = args[0];
         String id_category = args[1];
+        String id_uv = args[2];
 
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
         ArrayList<Uv> uvs = new ArrayList<Uv>();
@@ -47,13 +49,26 @@ public class ListService extends AsyncTask<String, Void, ArrayList<Uv>> {
         // Making HTTP request
         try {
 
-            HttpPost httpPost = new HttpPost(WSConstants.UVS.URI);
-            // defaultHttpClient
-            DefaultHttpClient httpClient = new DefaultHttpClient();
+            HttpPost httpPost;
+            DefaultHttpClient httpClient;
 
+            if(id_category.equals("search")){
+                httpPost = new HttpPost(WSConstants.UVS.URI_ONE);
+                // defaultHttpClient
+                httpClient = new DefaultHttpClient();
 
-            nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.TOKEN, token));
-            nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.ID_CATEGORY, id_category));
+                nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.TOKEN, token));
+                nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.ID, id_category));
+                nameValuePairs.add(new BasicNameValuePair(IntentConstants.ID_UV, id_uv));
+            } else {
+                httpPost = new HttpPost(WSConstants.UVS.URI);
+                // defaultHttpClient
+                httpClient = new DefaultHttpClient();
+
+                nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.TOKEN, token));
+                nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.ID_CATEGORY, id_category));
+            }
+
 
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 

@@ -67,7 +67,7 @@
                 public function update($model, $table, $where, $whereArgs = array())
                 {
                         $set = '';
-                        foreach($model as $name => $value)
+                        foreach($model->toDatabase() as $name => $value)
                         {
                                 if($set != '')
                                 {

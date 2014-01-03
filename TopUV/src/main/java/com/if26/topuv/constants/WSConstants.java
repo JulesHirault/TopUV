@@ -31,6 +31,7 @@ public class WSConstants {
     public static class UVS
     {
         public static final String URI = ROOT + "liste_uv.php";
+        public static final String URI_ONE = ROOT + "desc.php";
         public static final String TOKEN = "token";
         public static final String UVS = "uvs";
 

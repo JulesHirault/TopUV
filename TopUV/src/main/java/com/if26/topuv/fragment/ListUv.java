@@ -38,9 +38,10 @@ public class ListUv extends ListFragment {
             context = this.getActivity();
             String token = this.getActivity().getIntent().getStringExtra(IntentConstants.TOKEN);
             String id_category = this.getActivity().getIntent().getStringExtra(IntentConstants.ID_CATEGORY);
+            String id_uv= this.getActivity().getIntent().getStringExtra(IntentConstants.ID_UV);
 
             ListService listService = new ListService(context);
-            ArrayList<Uv> uvs = listService.execute(token, id_category).get();
+            ArrayList<Uv> uvs = listService.execute(token, id_category, id_uv).get();
 
             this.setListAdapter(new UvsAdapter(this.getActivity(), uvs));
         }

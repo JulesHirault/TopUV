@@ -91,7 +91,7 @@ public class CategoriesFragment extends Fragment implements View.OnClickListener
             intent.putExtra(IntentConstants.ID_CATEGORY, "0");
         } else if(view == Search) {
             intent = new Intent(this.getActivity(), SearchActivity.class);
-            intent.putExtra(IntentConstants.ID_CATEGORY, "8");
+            intent.putExtra(IntentConstants.ID_CATEGORY, "search");
         }
         intent.putExtra(IntentConstants.STUDENT_ID, student_id);
         intent.putExtra(IntentConstants.TOKEN, token);

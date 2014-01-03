@@ -6,12 +6,12 @@ require_once('model/description.php');
 
 $parameters = array
 (
-		':token' => '984ddb25d8f1cd3228b55be24d86dab6',
-        ':text' => 'Cool',
-		':id_student' => '1',
-		':id_uv' => 'IF26',
-		':mark' => '14',
-		':id_description' => '1'
+		':token' => null,
+        ':text' => null,
+		':id_student' => null,
+		':id_uv' => null,
+		':mark' => null,
+		':id_description' => null
 );
 
 foreach($_POST as $key => $value)
@@ -41,29 +41,21 @@ if($student !== false){
 	$total = 0;
 
 
-	$ids_student = array();
-	foreach ($comments as $comment) {
-		if($comment->mark != -1){
+	$ids_student = 0;
+	foreach ($comments as $current_comment) {
+		if($current_comment->mark != -1){
 
-			$find = false;
+			if($comment->id_student == $current_comment->id_student){
+				$ids_student +=1;
+				$current_comment->mark = $comment->mark;
+				if($db->update($current_comment, 'comment', 'id = :id', array(':id' => $current_comment->id))){
 
-			if(count($ids_student) == 0){
-				array_push($ids_student, $comment->id_student);
-			} else {
-				foreach($ids_student as $id_student){
-					if($id_student == $comment->id_student){
-						$find = true;
-					}
 				}
+				$total += $current_comment->mark;
 			}
-			
-   			if($find == false){
-   				$total += $comment->mark;
-   			}
-			
 		}
 	}
-	$total / count($ids_student);
+	$total = $total / $ids_student;
 
 	$detail = $db->selectOne('Description', 'description_uv', 'id = :id_description', array(':id_description' => $parameters[':id_description']));
 	$detail->avg_mark = $total;
