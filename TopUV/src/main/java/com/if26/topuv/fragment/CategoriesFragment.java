@@ -83,9 +83,11 @@ public class CategoriesFragment extends Fragment implements View.OnClickListener
             intent = new Intent(this.getActivity(), ListActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "7");
         } else if(view == Top) {
-            Toast.makeText(getActivity().getBaseContext(), "Get Top List", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this.getActivity(), ListActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "top");
         } else if(view == Flop) {
-            Toast.makeText(getActivity().getBaseContext(), "Get Flop List", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this.getActivity(), ListActivity.class);
+            intent.putExtra(IntentConstants.ID_CATEGORY, "flop");
         } else if(view == MesUV) {
             intent = new Intent(this.getActivity(), ListActivity.class);
             intent.putExtra(IntentConstants.ID_CATEGORY, "0");

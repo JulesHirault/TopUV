@@ -31,7 +31,7 @@ public class WSConstants {
     public static class UVS
     {
         public static final String URI = ROOT + "liste_uv.php";
-        public static final String URI_ONE = ROOT + "desc.php";
+        public static final String URI_ONE = ROOT + "search.php";
         public static final String TOKEN = "token";
         public static final String UVS = "uvs";
 
@@ -70,7 +70,7 @@ public class WSConstants {
 
     public static class COMMENT
     {
-        public static final String URI = ROOT + "comment.php";
+        public static final String URI = ROOT + "liste_comment.php";
         public static final String URI2 = ROOT + "add_comment.php";
         public static final String TOKEN = "token";
         public static final String COMMENT = "comment";

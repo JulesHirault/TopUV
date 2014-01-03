@@ -4,6 +4,7 @@ require_once('model/student.php');
 require_once('model/uv.php');
 require_once('model/category.php');
 require_once('model/studentUv.php');
+require_once('model/description.php');
 
 $parameters = array
 (
@@ -25,9 +26,8 @@ $db = new Database($configDB['dsn'], $configDB['username'], $configDB['password'
 $student = $db->selectOne('Student', 'student', 'token = :token', array(':token' => $parameters[':token']));
 
 if($student !== false){
-	$parameters[':id_category'] = (int) $parameters[':id_category'];
 
-	if($parameters[':id_category'] == 0){
+	if($parameters[':id_category'] === "0"){
 		$student->id = (int) $student->id;
 		$ids = $db->selectSeveral('studentUv', 'student_uv', 'id_student = :student_id', array(':student_id' => $student->id));
 
@@ -39,10 +39,25 @@ if($student !== false){
 			array_push($uvs, $temp);
 		}
 		
-	} else if($parameters[':id_category'] == 8){
+	} else if($parameters[':id_category'] === "top"){
+		$descriptions = $db->selectTop('Description', 'description_uv', 'avg_mark DESC');
+		$uvs = array();
+		foreach ($descriptions as $key => $value) {
+			$temp = $db->selectOne('Uv', 'uv', 'id_description = :id', array(':id' => $descriptions[$key]->id));
+			$category = $db->selectOne('Category', 'category', 'id = :id_category', array(':id_category' => $temp->id_category));
+			$temp->category = $category;
+			array_push($uvs, $temp);
+		}
 
-	} else if($parameters[':id_category'] == 9){
-
+	} else if($parameters[':id_category'] === "flop"){
+		$descriptions = $db->selectTop('Description', 'description_uv', 'avg_mark ASC');
+		$uvs = array();
+		foreach ($descriptions as $key => $value) {
+			$temp = $db->selectOne('Uv', 'uv', 'id_description = :id', array(':id' => $descriptions[$key]->id));
+			$category = $db->selectOne('Category', 'category', 'id = :id_category', array(':id_category' => $temp->id_category));
+			$temp->category = $category;
+			array_push($uvs, $temp);
+		}
 	} else {
 		$uvs = $db->selectSeveral('Uv', 'uv', 'id_category = :id_category', array(':id_category' => $parameters[':id_category']));
 		$category = $db->selectOne('Category', 'category', 'id = :id_category', array(':id_category' => $parameters[':id_category']));
