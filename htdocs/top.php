@@ -1,8 +1,8 @@
 <?php
 require_once('database/database.php');
 require_once('model/student.php');
+require_once('model/uv.php');
 require_once('model/description.php');
-
 $parameters = array
 (
         ':token' => null
@@ -22,10 +22,16 @@ $db = new Database($configDB['dsn'], $configDB['username'], $configDB['password'
 
 //if($student !== false){
 
-$top = $db->selectTop('Description', 'description_uv', 'avg_mark DESC');
+$descriptions = $db->selectTop('Description', 'description_uv', 'avg_mark DESC');
+$uvs = array();
+foreach ($descriptions as $key => $value) {
+	$temp = $db->selectOne('Uv', 'uv', 'id_description = :id', array(':id' => $descriptions[$key]->id));
+	array_push($uvs, $temp);
+	}
+	
 $json = array(
     'error' => false,
-    'top10' => $top
+    'top' => $uvs
 );
 //}
 echo json_encode($json);
