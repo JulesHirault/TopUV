@@ -1,7 +1,7 @@
 package com.if26.topuv.models;
 
 /**
- * Created by Flo on 30/12/2013.
+ * Classe Comment suivant la table
  */
 public class Comment {
 

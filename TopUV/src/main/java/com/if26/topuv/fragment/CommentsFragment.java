@@ -20,7 +20,7 @@ import com.if26.topuv.models.Comment;
 import java.util.ArrayList;
 
 /**
- * Created by Flo on 27/12/2013.
+ * Fragment qui affiche une liste des commentaires de l'Uv
  */
 public class CommentsFragment extends ListFragment {
 
@@ -29,7 +29,10 @@ public class CommentsFragment extends ListFragment {
     {
         super.onActivityCreated(savedInstanceState);
 
+        // récupère les commentaires
         ArrayList<Comment> comments = ((TabActivity) this.getActivity()).getComments();
+
+        // Si aucun commentaire
         if(comments.size() == 0){
             Comment comment = new Comment();
             comment.mark = -1;
@@ -45,6 +48,9 @@ public class CommentsFragment extends ListFragment {
 
     }
 
+    /**
+     * Classe pour customiser la liste en y incorporant une image et une ratingBar notamment
+     */
     private class CommentsAdapter extends ArrayAdapter<Comment> implements View.OnTouchListener
     {
         public CommentsAdapter(Context context, ArrayList<Comment> uvs)
@@ -57,6 +63,7 @@ public class CommentsFragment extends ListFragment {
         {
             ViewGroup viewGroup = (ViewGroup) LayoutInflater.from(this.getContext()).inflate(R.layout.comments_page, null);
 
+            // vérification à chaque fois si il y a bien au moins un commentaire
             if(this.getItem(position).student != null){
                 ((ImageView) viewGroup.findViewById(R.id.studentPicture)).setImageBitmap(this.getItem(position).student.picture);
                 ((TextView) viewGroup.findViewById(R.id.studentName)).setText(this.getItem(position).student.getIdentity());

@@ -18,7 +18,7 @@ import com.if26.topuv.services.DescriptionDetailsService;
 import java.util.concurrent.ExecutionException;
 
 /**
- * Created by Flo on 27/12/2013.
+ * Fragment qui va afficher simplement la description de l'Uv
  */
 public class DescriptionFragment extends Fragment implements View.OnTouchListener {
 
@@ -52,6 +52,7 @@ public class DescriptionFragment extends Fragment implements View.OnTouchListene
             uvTitleTextView.setText(id_uv + " - " + label_uv);
         }
 
+        // rend la ratingBar non cliquable et non changeable
         ratingBar.setFocusable(false);
         ratingBar.setOnTouchListener(this);
         ratingBar.setRating(((float) description.avg_mark) / 4);

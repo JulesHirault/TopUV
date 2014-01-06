@@ -7,7 +7,7 @@ import android.app.Fragment;
 import android.app.FragmentTransaction;
 
 /**
- * Created by Flo on 31/12/2013.
+ * Classe qui permet la fusion des onglet de TabFragment dans l'ActionBar
  */
 public class TabListener<T extends Fragment> implements ActionBar.TabListener {
     private Fragment mFragment;
@@ -15,10 +15,10 @@ public class TabListener<T extends Fragment> implements ActionBar.TabListener {
     private final String mTag;
     private final Class<T> mClass;
 
-    /** Constructor used each time a new tab is created.
-     * @param activity  The host Activity, used to instantiate the fragment
-     * @param tag  The identifier tag for the fragment
-     * @param clz  The fragment's Class, used to instantiate the fragment
+    /** Constructeur utilisé à chaque nouvel onglet créé
+     * @param activity  l'activité hôte du fragment
+     * @param tag  l'identifiant du fragment
+     * @param clz  la classe du fragment
      */
     public TabListener(Activity activity, String tag, Class<T> clz) {
         mActivity = activity;
@@ -26,28 +26,28 @@ public class TabListener<T extends Fragment> implements ActionBar.TabListener {
         mClass = clz;
     }
 
-    /* The following are each of the ActionBar.TabListener callbacks */
+   // les méthodes suivantes sont les callback des onglets
 
     public void onTabSelected(Tab tab, FragmentTransaction ft) {
-        // Check if the fragment is already initialized
+        // vérifie si le fragment a été initialisé
         if (mFragment == null) {
-            // If not, instantiate and add it to the activity
+            // Si non, on l'instancie et on l'ajoute à l'activité
             mFragment = Fragment.instantiate(mActivity, mClass.getName());
             ft.add(android.R.id.content, mFragment, mTag);
         } else {
-            // If it exists, simply attach it in order to show it
+            // Si oui, on le montre simplement
             ft.attach(mFragment);
         }
     }
 
     public void onTabUnselected(Tab tab, FragmentTransaction ft) {
         if (mFragment != null) {
-            // Detach the fragment, because another one is being attached
+            // Détache le fragment car un autre viens d'être attaché
             ft.detach(mFragment);
         }
     }
 
     public void onTabReselected(Tab tab, FragmentTransaction ft) {
-        // User selected the already selected tab. Usually do nothing.
+        // en cas de resélection, ici aucun intérêt
     }
 }

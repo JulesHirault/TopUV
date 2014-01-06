@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.if26.topuv.R;
 
 /**
- * Created by Flo on 26/12/2013.
+ * Activité qui lance le fragment permettant de rechercher une Uv particulière
  */
 public class SearchActivity extends Activity {
     @Override

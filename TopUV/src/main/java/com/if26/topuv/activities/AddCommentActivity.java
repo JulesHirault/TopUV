@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.if26.topuv.R;
 
 /**
- * Created by Flo on 31/12/2013.
+ * Activité qui permet qui lance le fragment permettant d'ajouter un commentaire
  */
 public class AddCommentActivity extends Activity {
     @Override

@@ -16,7 +16,9 @@
             android:text="UV - Titre de l'UV"
             android:id="@+id/uvTitleTextView"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:textColor="#363e49" />
 
         <TextView

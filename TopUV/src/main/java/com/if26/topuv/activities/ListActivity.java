@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.if26.topuv.R;
 
 /**
- * Created by Flo on 23/12/2013.
+ * Activité qui lance le fragment permettant d'afficher la liste résultant du choix de catégorie effectué
  */
 public class ListActivity extends Activity {
     @Override

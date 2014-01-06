@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
 /**
- * Created by Flo on 23/12/2013.
+ * Fragment qui affiche une liste simple d'élément (ici les Uv récupérées)
  */
 public class ListUv extends ListFragment {
 
@@ -72,6 +72,9 @@ public class ListUv extends ListFragment {
         this.startActivity(intent);
     }
 
+    /**
+     * Classe qui permet l'affichage du texte sous forme de liste
+     */
     private class UvsAdapter extends ArrayAdapter<Uv>
     {
         public UvsAdapter(Context context, ArrayList<Uv> uvs)

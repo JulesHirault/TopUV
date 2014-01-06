@@ -13,7 +13,7 @@ import com.if26.topuv.constants.IntentConstants;
 import com.if26.topuv.models.Description;
 
 /**
- * Created by Flo on 27/12/2013.
+ * Fragment qui va simplement récupérer le détail des horaires et de la disponibilité de l'Uv
  */
 public class DetailsFragment extends Fragment {
 
@@ -42,6 +42,7 @@ public class DetailsFragment extends Fragment {
         TextView tpeTextView = (TextView) myView.findViewById(R.id.tpeTextView);
         TextView dispoTextView = (TextView) myView.findViewById(R.id.dispoTextView);
 
+        // vérification si les informations ont bien été renseignées
         if(description.type_uv != null){
             typeTextView.setText(description.type_uv);
         }

@@ -17,7 +17,7 @@ import com.if26.topuv.constants.IntentConstants;
 
 
 /**
- * Created by Flo on 26/12/2013.
+ * Fragment qui va permettre la recherche d'une Uv particulière
  */
 public class SearchFragment extends Fragment implements View.OnClickListener {
 
@@ -41,6 +41,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
 
         boolean error = false;
+        // validation locale
         if(searchText.length() == 0)
         {
             error = true;

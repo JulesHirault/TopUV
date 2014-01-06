@@ -17,7 +17,7 @@ import com.if26.topuv.constants.IntentConstants;
 
 
 /**
- * Created by Flo on 13/12/2013.
+ * Fragment du menu principal qui affiche les différentes catégories de recherche d'Uvs disponibles
  */
 public class CategoriesFragment extends Fragment implements View.OnClickListener {
 
@@ -56,6 +56,9 @@ public class CategoriesFragment extends Fragment implements View.OnClickListener
     }
 
     @Override
+    /**
+     * Le OnClick va lancer une nouvelle activté en fonction de ce qui aura été cliqué
+     */
     public void onClick(View view) {
         String token = this.getActivity().getIntent().getStringExtra(IntentConstants.TOKEN);
         String student_id = this.getActivity().getIntent().getStringExtra(IntentConstants.STUDENT_ID);

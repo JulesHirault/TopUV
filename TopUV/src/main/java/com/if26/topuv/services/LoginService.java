@@ -24,7 +24,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
- * Created by Flo on 29/11/2013.
+ * Classe qui va communiquer avec le service web permettant de se logger à l'application
  */
 public class LoginService extends AsyncTask<String, Void, String[]> {
     Context context;
@@ -41,11 +41,10 @@ public class LoginService extends AsyncTask<String, Void, String[]> {
 
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
         String[] result = new String[2];
-        // Making HTTP request
+        // Requête HTTP
         try {
 
             HttpPost httpPost = new HttpPost(WSConstants.LOGIN.URI);
-            // defaultHttpClient
             DefaultHttpClient httpClient = new DefaultHttpClient();
 
 
@@ -57,6 +56,7 @@ public class LoginService extends AsyncTask<String, Void, String[]> {
             HttpResponse httpResponse = httpClient.execute(httpPost, new BasicHttpContext());
             String response = EntityUtils.toString(httpResponse.getEntity());
 
+            // réponse en JSON
             JSONObject jsonObject = new JSONObject(response);
             result[0] = jsonObject.getString(WSConstants.LOGIN.TOKEN);
             result[1] = jsonObject.getString(WSConstants.STUDENT.ID);
@@ -76,6 +76,9 @@ public class LoginService extends AsyncTask<String, Void, String[]> {
     }
 
     @Override
+    /**
+     * affiche un spinner dans une fnêtre de dialogue pendant la récupération des données
+     */
     protected void onPreExecute() {
         super.onPreExecute();
         progDialog = new ProgressDialog(this.context);
@@ -87,6 +90,9 @@ public class LoginService extends AsyncTask<String, Void, String[]> {
     }
 
     @Override
+    /**
+     * Ferme la fenêtre de dialogue une fois la récupération de données terminée
+     */
     protected void onPostExecute(String[] unused) {
         super.onPostExecute(unused);
         progDialog.dismiss();

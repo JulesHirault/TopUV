@@ -27,7 +27,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
- * Created by Flo on 23/12/2013.
+ * Classe qui va communiquer avec le service web permettant la récuprération des listes d'Uv
  */
 public class ListService extends AsyncTask<String, Void, ArrayList<Uv>> {
     Context context;
@@ -46,23 +46,26 @@ public class ListService extends AsyncTask<String, Void, ArrayList<Uv>> {
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
         ArrayList<Uv> uvs = new ArrayList<Uv>();
 
-        // Making HTTP request
+        // Requête HTTP
         try {
 
             HttpPost httpPost;
             DefaultHttpClient httpClient;
 
+            // Si recherche particulière (pas la même URL appelée)
             if(id_category.equals("search")){
                 httpPost = new HttpPost(WSConstants.UVS.URI_ONE);
-                // defaultHttpClient
+
                 httpClient = new DefaultHttpClient();
 
                 nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.TOKEN, token));
                 nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.ID, id_category));
                 nameValuePairs.add(new BasicNameValuePair(IntentConstants.ID_UV, id_uv));
             } else {
+
+                // si recherche normale (par catégorie)
                 httpPost = new HttpPost(WSConstants.UVS.URI);
-                // defaultHttpClient
+
                 httpClient = new DefaultHttpClient();
 
                 nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.TOKEN, token));
@@ -75,6 +78,7 @@ public class ListService extends AsyncTask<String, Void, ArrayList<Uv>> {
             HttpResponse httpResponse = httpClient.execute(httpPost, new BasicHttpContext());
             String response = EntityUtils.toString(httpResponse.getEntity());
 
+            // réponse en JSON
             JSONObject jsonObject = new JSONObject(response);
 
             if(jsonObject.has(WSConstants.UVS.UVS))
@@ -82,6 +86,7 @@ public class ListService extends AsyncTask<String, Void, ArrayList<Uv>> {
                 JSONArray jsonArray = jsonObject.getJSONArray(WSConstants.UVS.UVS);
                 for(int index = 0; index < jsonArray.length(); index++)
                 {
+                    // création d'objets Uvdans une liste d'Uvs à partir du JSON récupéré
                     Uv uv = new Uv();
                     uv.id = jsonArray.getJSONObject(index).getString(WSConstants.UVS.ID);
                     uv.label = jsonArray.getJSONObject(index).getString(WSConstants.UVS.LABEL);
@@ -113,6 +118,9 @@ public class ListService extends AsyncTask<String, Void, ArrayList<Uv>> {
 
 
     @Override
+    /**
+     * affiche un spinner dans une fnêtre de dialogue pendant la récupération des données
+     */
     protected void onPreExecute() {
         super.onPreExecute();
         progDialog = new ProgressDialog(this.context);
@@ -124,6 +132,9 @@ public class ListService extends AsyncTask<String, Void, ArrayList<Uv>> {
     }
 
     @Override
+    /**
+     * Ferme la fenêtre de dialogue une fois la récupération de données terminée
+     */
     protected void onPostExecute(ArrayList unused) {
         super.onPostExecute(unused);
         progDialog.dismiss();

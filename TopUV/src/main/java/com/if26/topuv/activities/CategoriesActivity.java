@@ -6,7 +6,7 @@ import android.app.Activity;
 import com.if26.topuv.R;
 
 /**
- * Created by Flo on 13/12/2013.
+ * Activité qui permet de lancer le fragment qui initialise les différentes catégories d'UVs disponibles
  */
 public class CategoriesActivity extends Activity{
     @Override

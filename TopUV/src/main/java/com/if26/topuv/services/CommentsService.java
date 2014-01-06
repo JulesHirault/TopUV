@@ -32,7 +32,7 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 
 /**
- * Created by Flo on 30/12/2013.
+ * Classe qui va communiquer avec le service web permettant la récupération de commentaires dans la DB
  */
 public class CommentsService extends AsyncTask<String, Void, ArrayList<Comment>> {
     Context context;
@@ -50,11 +50,11 @@ public class CommentsService extends AsyncTask<String, Void, ArrayList<Comment>>
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
         ArrayList<Comment> result = new ArrayList<Comment>();
 
-        // Making HTTP request
+        // Requête HTTP
         try {
 
             HttpPost httpPost = new HttpPost(WSConstants.COMMENT.URI);
-            // defaultHttpClient
+
             DefaultHttpClient httpClient = new DefaultHttpClient();
 
 
@@ -66,6 +66,7 @@ public class CommentsService extends AsyncTask<String, Void, ArrayList<Comment>>
             HttpResponse httpResponse = httpClient.execute(httpPost, new BasicHttpContext());
             String response = EntityUtils.toString(httpResponse.getEntity());
 
+            // récupère l'objet JSON
             JSONObject jsonObject = new JSONObject(response);
 
             if(jsonObject.has(WSConstants.COMMENT.COMMENT))
@@ -73,6 +74,7 @@ public class CommentsService extends AsyncTask<String, Void, ArrayList<Comment>>
                 JSONArray jsonArray = jsonObject.getJSONArray(WSConstants.COMMENT.COMMENT);
                 for(int index = 0; index < jsonArray.length(); index++)
                 {
+                    // création d'objets commentaires pour chaque commentaire récupéré
                     Comment comment = new Comment();
                     comment.id = Integer.parseInt(jsonArray.getJSONObject(index).getString(WSConstants.COMMENT.ID));
                     comment.text = jsonArray.getJSONObject(index).getString(WSConstants.COMMENT.TEXT);
@@ -107,6 +109,12 @@ public class CommentsService extends AsyncTask<String, Void, ArrayList<Comment>>
         return result;
     }
 
+    /**
+     * Récupère le bitmap d'une image à partir d'une URL
+     * @param url l'url de l'image
+     * @return le bitmap de l'image
+     * @throws IOException
+     */
     public Bitmap getImage(String url) throws IOException {
         final URLConnection conn = new URL(url).openConnection();
         conn.connect();
@@ -123,6 +131,9 @@ public class CommentsService extends AsyncTask<String, Void, ArrayList<Comment>>
 
 
     @Override
+    /**
+     * affiche un spinner dans une fnêtre de dialogue pendant la récupération des données
+     */
     protected void onPreExecute() {
         super.onPreExecute();
         progDialog = new ProgressDialog(this.context);
@@ -134,6 +145,9 @@ public class CommentsService extends AsyncTask<String, Void, ArrayList<Comment>>
     }
 
     @Override
+    /**
+     * Ferme la fenêtre de dialogue une fois la récupération de données terminée
+     */
     protected void onPostExecute(ArrayList unused) {
         super.onPostExecute(unused);
         progDialog.dismiss();

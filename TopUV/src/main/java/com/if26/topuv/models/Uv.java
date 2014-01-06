@@ -1,7 +1,7 @@
 package com.if26.topuv.models;
 
 /**
- * Created by Jules on 17/12/13.
+ * Classe Uv correspondant à la table
  */
 public class Uv {
     public String id;
@@ -11,6 +11,10 @@ public class Uv {
 
     public Category category;
 
+    /**
+     * Permet de récupérer le nom de L'Uv
+     * @return le nom de l'Uv
+     */
     public String getListLabel(){
         return "  " + this.id + " - " + this.label;
     }

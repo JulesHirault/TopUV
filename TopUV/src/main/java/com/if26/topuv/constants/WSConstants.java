@@ -1,7 +1,7 @@
 package com.if26.topuv.constants;
 
 /**
- * Created by Flo on 12/12/2013.
+ * Classes contenant les constantes des services webs
  */
 public class WSConstants {
     public static final String ROOT = "http://pinatflo.esy.es/";

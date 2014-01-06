@@ -1,7 +1,7 @@
 package com.if26.topuv.models;
 
 /**
- * Created by Flo on 29/12/2013.
+ * Classe Description suivant la table
  */
 public class Description {
     public int id;

@@ -21,7 +21,10 @@ import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
 /**
- * Created by Flo on 27/12/2013.
+ * Fragment qui va afficher sous forme de 3 onglets les 3 fragments suivants :
+ * - DescriptionFragment
+ * - DétailsFragment
+ * - CommentsFragment
  */
 public class TabFragment extends Fragment implements OnTabChangeListener {
 
@@ -36,10 +39,7 @@ public class TabFragment extends Fragment implements OnTabChangeListener {
         myView = inflater.inflate(R.layout.tab_page, container, false);
         context = this.getActivity();
 
-        // Notice that setContentView() is not used, because we use the root
-        // android.R.id.content as the container for each fragment
-
-        // setup action bar for tabs
+        // Mise en place des 3 onglets dans l'actionBar
         ActionBar actionBar = this.getActivity().getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setDisplayShowTitleEnabled(true);
@@ -76,9 +76,11 @@ public class TabFragment extends Fragment implements OnTabChangeListener {
             String id_description = this.getActivity().getIntent().getStringExtra(IntentConstants.ID_DESCRIPTION);
             String id_uv = this.getActivity().getIntent().getStringExtra(IntentConstants.ID_UV);
 
+            // récupération de la desctipion de l'Uv
             DescriptionDetailsService descriptionService = new DescriptionDetailsService(context);
             Description description = descriptionService.execute(token, id_description).get();
 
+            // récupération des commentaires de l'uv sélectionnée
             CommentsService commentsService = new CommentsService(context);
             ArrayList<Comment> comments = commentsService.execute(token, id_uv).get();
 

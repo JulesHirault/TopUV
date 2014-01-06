@@ -22,6 +22,7 @@ import java.util.concurrent.ExecutionException;
 
 
 /**
+ * Fragment qui va permettre à l'utilisatur de se logger
  * envoyer git à contact@eutech.ssii.com
  * Created by Flo on 10/12/2013.
  */
@@ -47,7 +48,7 @@ public class LoginFragment extends Fragment implements OnClickListener {
     @Override
     public void onClick(View view) {
 
-        // Local validation
+        // validation locale
         boolean error = false;
         if(password.length() == 0)
         {
@@ -61,6 +62,7 @@ public class LoginFragment extends Fragment implements OnClickListener {
         LoginService loginService = new LoginService(context);
         try
         {
+            // récupère la réponse du service web
             String[] result = loginService.execute(login.getText().toString(), password.getText().toString()).get();
             String token = result[0];
             String student_id = result[1];
@@ -68,6 +70,7 @@ public class LoginFragment extends Fragment implements OnClickListener {
             if(token == null){
                 Toast.makeText(getActivity().getBaseContext(), "Login Failed :( !", Toast.LENGTH_SHORT).show();
             } else if(token != null){
+                // si succès lance l'activité Catégorie
                 Intent intent = new Intent(this.getActivity(), CategoriesActivity.class);
                 intent.putExtra(IntentConstants.TOKEN, token);
                 intent.putExtra(IntentConstants.STUDENT_ID, student_id);

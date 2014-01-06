@@ -24,7 +24,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
- * Created by Flo on 29/12/2013.
+ * Classe qui va communiquer avec le service web permettant la récupération de la description
+ * et du détail d'une Uv dans la DB
  */
 public class DescriptionDetailsService extends AsyncTask<String, Void, Description> {
 
@@ -42,11 +43,11 @@ public class DescriptionDetailsService extends AsyncTask<String, Void, Descripti
 
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
         Description description = new Description();
-        // Making HTTP request
+        // Requête HTTP
         try {
 
             HttpPost httpPost = new HttpPost(WSConstants.DESCRIPTION.URI);
-            // defaultHttpClient
+
             DefaultHttpClient httpClient = new DefaultHttpClient();
 
 
@@ -58,9 +59,10 @@ public class DescriptionDetailsService extends AsyncTask<String, Void, Descripti
             HttpResponse httpResponse = httpClient.execute(httpPost, new BasicHttpContext());
             String response = EntityUtils.toString(httpResponse.getEntity());
 
+            // Réponde en JSON
             JSONObject jsonObject = new JSONObject(response);
 
-
+            // création d'un objet description à partir du JSON
             description.id = Integer.parseInt(jsonObject.getJSONObject(WSConstants.DESCRIPTION.DESCRIPTION).getString(WSConstants.DESCRIPTION.ID));
             description.curricula = jsonObject.getJSONObject(WSConstants.DESCRIPTION.DESCRIPTION).getString(WSConstants.DESCRIPTION.CURRICULA);
             description.objectives = jsonObject.getJSONObject(WSConstants.DESCRIPTION.DESCRIPTION).getString(WSConstants.DESCRIPTION.OBJECTIVES);
@@ -87,6 +89,9 @@ public class DescriptionDetailsService extends AsyncTask<String, Void, Descripti
 
 
     @Override
+    /**
+     * affiche un spinner dans une fnêtre de dialogue pendant la récupération des données
+     */
     protected void onPreExecute() {
         super.onPreExecute();
         progDialog = new ProgressDialog(this.context);
@@ -98,6 +103,9 @@ public class DescriptionDetailsService extends AsyncTask<String, Void, Descripti
     }
 
     @Override
+    /**
+     * Ferme la fenêtre de dialogue une fois la récupération de données terminée
+     */
     protected void onPostExecute(Description unused) {
         super.onPostExecute(unused);
         progDialog.dismiss();

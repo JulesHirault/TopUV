@@ -3,7 +3,7 @@ package com.if26.topuv.models;
 import android.graphics.Bitmap;
 
 /**
- * Created by Flo on 12/12/2013.
+ * Classe Student suivant la table
  */
 public class Student {
     public int id;
@@ -14,6 +14,10 @@ public class Student {
     public Bitmap picture;
     public String token;
 
+    /**
+     * Permet de récupérer l'identité de l'étudiant
+     * @return L'identité de l'étudiant
+     */
     public String getIdentity()
     {
         return this.name + " " + this.surname;

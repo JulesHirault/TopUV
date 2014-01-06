@@ -23,7 +23,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
- * Created by Flo on 02/01/2014.
+ * Classe qui va communiquer avec le service web permettant l'ajout de commentaire dans la DB
  */
 public class AddCommentService extends AsyncTask<String, Void, String> {
 
@@ -45,11 +45,11 @@ public class AddCommentService extends AsyncTask<String, Void, String> {
 
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
 
-        // Making HTTP request
+        // Requête HTTP
         try {
 
             HttpPost httpPost = new HttpPost(WSConstants.COMMENT.URI2);
-            // defaultHttpClient
+
             DefaultHttpClient httpClient = new DefaultHttpClient();
 
 
@@ -65,6 +65,7 @@ public class AddCommentService extends AsyncTask<String, Void, String> {
             HttpResponse httpResponse = httpClient.execute(httpPost, new BasicHttpContext());
             String response = EntityUtils.toString(httpResponse.getEntity());
 
+            // Réponse sous JSON
             JSONObject jsonObject = new JSONObject(response);
             return jsonObject.getString("result");
 
@@ -82,6 +83,9 @@ public class AddCommentService extends AsyncTask<String, Void, String> {
     }
 
     @Override
+    /**
+     * affiche un spinner dans une fnêtre de dialogue pendant la récupération des données
+     */
     protected void onPreExecute() {
         super.onPreExecute();
         progDialog = new ProgressDialog(this.context);
@@ -93,6 +97,9 @@ public class AddCommentService extends AsyncTask<String, Void, String> {
     }
 
     @Override
+    /**
+     * Ferme la fenêtre de dialogue une fois la récupération de données terminée
+     */
     protected void onPostExecute(String unused) {
         super.onPostExecute(unused);
         progDialog.dismiss();
