@@ -1,3 +1,4 @@
+/*Script de création de la BD TopUV*/
 CREATE TABLE IF NOT EXISTS `category` (
   `id` int(255) NOT NULL,
   `label` varchar(500) NOT NULL,
