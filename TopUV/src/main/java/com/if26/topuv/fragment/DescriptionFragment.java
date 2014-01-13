@@ -57,11 +57,11 @@ public class DescriptionFragment extends Fragment implements View.OnTouchListene
         ratingBar.setOnTouchListener(this);
         ratingBar.setRating(((float) description.avg_mark) / 4);
 
-        if(description.curricula != null){
+        if(description.curricula != null && !description.curricula.equals("")){
             prgTextView.setText(description.curricula);
         }
 
-        if(description.objectives != null){
+        if(description.objectives != null && !description.objectives.equals("")){
             objectifsTextView.setText(description.objectives);
         }
 

@@ -92,7 +92,8 @@ if($student !== false){
         //Création du JSON
         $json = array(
             'error' => false,
-            'result' => $result
+            'result' => $result,
+            'id_description' => $parameters[':id_description']
         );
     }
 }

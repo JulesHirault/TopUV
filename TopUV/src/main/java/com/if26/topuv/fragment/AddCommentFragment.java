@@ -96,11 +96,11 @@ public class AddCommentFragment extends Fragment implements View.OnTouchListener
         try
         {
             // récupère la réponse du service web appelé
-            String result = addComment.execute(token, Float.toString(ratingBar.getRating()*4), student_id, id_uv, text.getText().toString(), id_description).get();
+            String[] result = addComment.execute(token, Float.toString(ratingBar.getRating()*4), student_id, id_uv, text.getText().toString(), id_description).get();
 
-            if(result == null){
+            if(result[0] == null){
                 Toast.makeText(getActivity().getBaseContext(), "Erreur de publication, essayez encore !", Toast.LENGTH_SHORT).show();
-            } else if(result != null){
+            } else if(result[0] != null){
 
                 // si succès, ferme l'activté du fragment et lance l'activté TabActivity
                 Toast.makeText(getActivity().getBaseContext(), "Commentaire et note envoyés", Toast.LENGTH_SHORT).show();
@@ -108,7 +108,13 @@ public class AddCommentFragment extends Fragment implements View.OnTouchListener
                 intent.putExtra(IntentConstants.TOKEN, token);
                 intent.putExtra(IntentConstants.STUDENT_ID, student_id);
                 intent.putExtra(IntentConstants.ID_UV, id_uv);
-                intent.putExtra(IntentConstants.ID_DESCRIPTION, id_description);
+
+                if(result[1] != null){
+                    intent.putExtra(IntentConstants.ID_DESCRIPTION, result[1]);
+                } else {
+                    intent.putExtra(IntentConstants.ID_DESCRIPTION, id_description);
+                }
+
                 intent.putExtra(IntentConstants.LABEL_UV, label_uv);
                 this.startActivity(intent);
                 this.getActivity().finish();

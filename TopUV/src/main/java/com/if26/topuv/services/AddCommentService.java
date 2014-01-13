@@ -25,7 +25,7 @@ import java.util.ArrayList;
 /**
  * Classe qui va communiquer avec le service web permettant l'ajout de commentaire dans la DB
  */
-public class AddCommentService extends AsyncTask<String, Void, String> {
+public class AddCommentService extends AsyncTask<String, Void, String[]> {
 
     Context context;
     ProgressDialog progDialog;
@@ -35,7 +35,7 @@ public class AddCommentService extends AsyncTask<String, Void, String> {
     }
 
     @Override
-    protected String doInBackground(String... args) {
+    protected String[] doInBackground(String... args) {
         String token = args[0];
         String mark = args[1];
         String id_student = args[2];
@@ -60,6 +60,7 @@ public class AddCommentService extends AsyncTask<String, Void, String> {
             nameValuePairs.add(new BasicNameValuePair(WSConstants.COMMENT.MARK, mark));
             nameValuePairs.add(new BasicNameValuePair(WSConstants.UVS.ID_DESCRIPTION, id_description));
 
+
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
             HttpResponse httpResponse = httpClient.execute(httpPost, new BasicHttpContext());
@@ -67,7 +68,10 @@ public class AddCommentService extends AsyncTask<String, Void, String> {
 
             // Réponse sous JSON
             JSONObject jsonObject = new JSONObject(response);
-            return jsonObject.getString("result");
+            String[] result = new String[2];
+            result[0] = jsonObject.getString("result");
+            result[1] = jsonObject.getString("id_description");
+            return result;
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -100,7 +104,7 @@ public class AddCommentService extends AsyncTask<String, Void, String> {
     /**
      * Ferme la fenêtre de dialogue une fois la récupération de données terminée
      */
-    protected void onPostExecute(String unused) {
+    protected void onPostExecute(String[] unused) {
         super.onPostExecute(unused);
         progDialog.dismiss();
     }

@@ -43,31 +43,31 @@ public class DetailsFragment extends Fragment {
         TextView dispoTextView = (TextView) myView.findViewById(R.id.dispoTextView);
 
         // vérification si les informations ont bien été renseignées
-        if(description.type_uv != null){
+        if(description.type_uv != null && !description.type_uv.equals("") ){
             typeTextView.setText(description.type_uv);
         }
 
-        if(description.credit != null){
+        if(description.credit != null && !description.credit.equals("")){
             creditsTextView.setText(description.credit);
         }
 
-        if(description.lectures != null){
+        if(description.lectures != null && !description.lectures.equals("")){
             cmTextView.setText(description.lectures);
         }
 
-        if(description.tutorials != null){
+        if(description.tutorials != null && !description.tutorials.equals("")){
             tdTextView.setText(description.tutorials);
         }
 
-        if(description.practicals != null){
+        if(description.practicals != null && !description.practicals.equals("")){
             tpTextView.setText(description.practicals);
         }
 
-        if(description.personnal != null){
+        if(description.personnal != null && !description.personnal.equals("")){
             tpeTextView.setText(description.personnal);
         }
 
-        if(description.availibility != null){
+        if(description.availibility != null && !description.availibility.equals("")){
             dispoTextView.setText(description.availibility);
         }
     }

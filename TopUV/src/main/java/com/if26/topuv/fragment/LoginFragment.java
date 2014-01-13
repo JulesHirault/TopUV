@@ -82,15 +82,15 @@ public class LoginFragment extends Fragment implements OnClickListener {
         }
         catch(InterruptedException interruptedException)
         {
-
+            Toast.makeText(getActivity().getBaseContext(), "Login Failed :( !", Toast.LENGTH_SHORT).show();
         }
         catch(ExecutionException executionException)
         {
-
+            Toast.makeText(getActivity().getBaseContext(), "Login Failed :( !", Toast.LENGTH_SHORT).show();
         }
         catch(NullPointerException nullPointerException)
         {
-
+            Toast.makeText(getActivity().getBaseContext(), "Login Failed :( !", Toast.LENGTH_SHORT).show();
         }
     }
 }
