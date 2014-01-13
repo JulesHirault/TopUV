@@ -3,6 +3,7 @@ require_once('database/database.php');
 require_once('model/comment.php');
 require_once('model/student.php');
 require_once('model/description.php');
+require_once('model/uv.php');
 //Script permettant l'ajout de commentaire concernant une UV
 //Initialisation du tableau de paramétres
 $parameters = array
@@ -52,6 +53,7 @@ if($student !== false){
 				$ids_student +=1;
 				$current_comment->mark = $comment->mark;
 				if($db->update($current_comment, 'comment', 'id = :id', array(':id' => $current_comment->id))){
+
 				}
 				$total += $current_comment->mark;
 			}
@@ -59,6 +61,28 @@ if($student !== false){
 	}
 	//Calcul de la nouvelle note moyenne
 	$total = $total / $ids_student;
+
+	if($parameters[':id_description'] == 0){
+		$desc = new Description();
+		$desc->curricula = "";
+    	$desc->objectives = "";
+    	$desc->type_uv = "";
+    	$desc->credits = "";
+    	$desc->availability= "";
+    	$desc->lectures = "";
+    	$desc->tutorials = "";
+    	$desc->practicals = "";
+    	$desc->personnal = "";
+    	$desc->avg_mark = '-1';
+
+		$req = $db->count('description_uv');
+		$count = $req + 1;
+		$resultbis = $db->insert($desc, 'description_uv');
+		$parameters[':id_description'] = $count;
+		$uv = $db->selectOne('Uv', 'uv', 'id = :id', array(':id' => $parameters[':id_uv']));
+		$uv->id_description = $parameters[':id_description'];
+		$resultbis = $db->update($uv, 'uv', 'id = :id', array(':id' => $parameters[':id_uv']));
+	}
 
     //maj de la note moyenne de l'UV dans la BD
 	$detail = $db->selectOne('Description', 'description_uv', 'id = :id_description', array(':id_description' => $parameters[':id_description']));

@@ -32,6 +32,15 @@ class Database
         $pdoStatement->execute();
         return $pdoStatement->fetchAll(PDO::FETCH_CLASS, $class);
     }
+
+    //Fonction qui compte le nombre de lignes d'une table
+    public function count($table){
+        $sql = "SELECT COUNT(*) FROM $table WHERE 1";
+        $pdoStatement = $this->pdo->prepare($sql);
+        $pdoStatement->execute();
+        return $pdoStatement->fetchColumn();
+    }
+
     //Fonction pour l'insertion d'élément dans la BD
     public function insert($model, $table) {
         $fields = '';

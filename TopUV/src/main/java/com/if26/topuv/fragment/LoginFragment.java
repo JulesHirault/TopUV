@@ -75,6 +75,7 @@ public class LoginFragment extends Fragment implements OnClickListener {
                 intent.putExtra(IntentConstants.TOKEN, token);
                 intent.putExtra(IntentConstants.STUDENT_ID, student_id);
                 this.startActivity(intent);
+                this.getActivity().finish();
             } else {
                 Toast.makeText(getActivity().getBaseContext(), "Something else wrong", Toast.LENGTH_SHORT).show();
             }

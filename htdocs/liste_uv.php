@@ -53,7 +53,7 @@ if($student !== false){
 		}
 
 	}
-	S'il s'agit des 10 pires UVs (moins bien notées)
+	//S'il s'agit des 10 pires UVs (moins bien notées)
     else if($parameters[':id_category'] === "flop"){
 		$descriptions = $db->selectTop('Description', 'description_uv', 'avg_mark ASC');
 		$uvs = array();
