@@ -47,20 +47,29 @@ if($student !== false){
 	//Initialisation variables
 	$total = 0;
 	$ids_student = 0;
+	$done = false;
 	foreach ($comments as $current_comment) {
 		if($current_comment->mark != -1){
 			if($comment->id_student == $current_comment->id_student){
-				$ids_student +=1;
 				$current_comment->mark = $comment->mark;
 				if($db->update($current_comment, 'comment', 'id = :id', array(':id' => $current_comment->id))){
 
 				}
+				if(!$done){
+					$ids_student +=1;
+					$total += $current_comment->mark;
+					$done = true;
+				}
+				
+			} else {
+				$ids_student +=1;
 				$total += $current_comment->mark;
 			}
 		}
 	}
 	//Calcul de la nouvelle note moyenne
 	$total = $total / $ids_student;
+	echo($total);
 
 	if($parameters[':id_description'] == 0){
 		$desc = new Description();

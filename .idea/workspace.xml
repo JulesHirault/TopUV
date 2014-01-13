@@ -52,16 +52,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d3b997b-e0f1-43f9-91bf-03b3326b16c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/pictures/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/pictures/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/pictures/4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/AddCommentFragment.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/AddCommentFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/AddCommentService.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/AddCommentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DescriptionFragment.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DescriptionFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DetailsFragment.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/DetailsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/LoginFragment.java" afterPath="$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/fragment/LoginFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/add_comment.php" afterPath="$PROJECT_DIR$/htdocs/add_comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TopUV/src/main/res/layout/comments_page.xml" afterPath="$PROJECT_DIR$/TopUV/src/main/res/layout/comments_page.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TopUV.iws" />
@@ -202,7 +193,10 @@
         <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/DescriptionDetailsService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="65" column="0" selection-start="2258" selection-end="2258" vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="1470">
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1396#1411#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1264,7 +1258,11 @@
       <created>1389632116644</created>
       <updated>1389632116644</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updates specific use&#10;update when db is not filled and comment an uv it put a description in the db.&#10;add pictures&#10;web services update too">
+      <created>1389653725613</created>
+      <updated>1389653725613</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1320,7 +1318,8 @@
     <MESSAGE value="Update Server&#10;New Server : Hostinger Server&#10;Localhost problems solved&#10;Changed access to new server" />
     <MESSAGE value="Add Tab fragments&#10;add and update tab fragments&#10;also update server scripts after database update" />
     <MESSAGE value="Update&#10;Update layouts&#10;update web service adding comment when no description exist in the table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update&#10;Update layouts&#10;update web service adding comment when no description exist in the table" />
+    <MESSAGE value="Updates specific use&#10;update when db is not filled and comment an uv it put a description in the db.&#10;add pictures&#10;web services update too" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates specific use&#10;update when db is not filled and comment an uv it put a description in the db.&#10;add pictures&#10;web services update too" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1627,7 +1626,10 @@
     <entry file="file://$PROJECT_DIR$/TopUV/src/main/java/com/if26/topuv/services/DescriptionDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="0" selection-start="2258" selection-end="2258" vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="1470">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1396#1411#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
