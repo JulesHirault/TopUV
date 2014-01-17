@@ -3,13 +3,10 @@ TopUV
 
 ========================
 Projet IF26 - TopUVs
+
 Projet réalisé dans le cadre de l'UV IF26 (Conception sécurisée d'applications : Web Mobile et Smartphones).
 L'objectif de celui-ci a été la création d'une application Androïd pour la consultation et "l'évaluation" des UVs enseignées au sein de l'UTT.
 Les principales fonctionnalités et les différents étapes de conception sont détaillées au sein du Wiki.
-
-========================
-
-
 
 
 Installer Android Studio
