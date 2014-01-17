@@ -112,7 +112,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="103" selection-start="414" selection-end="414" vertical-scroll-proportion="0.2735632" vertical-offset="0" max-vertical-offset="731">
+            <state line="8" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.31264368" vertical-offset="0" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
@@ -1147,7 +1147,11 @@
       <created>1389944588008</created>
       <updated>1389944588008</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Readme">
+      <created>1389945012963</created>
+      <updated>1389945012963</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1203,7 +1207,8 @@
     <MESSAGE value="Update Server&#10;New Server : Hostinger Server&#10;Localhost problems solved&#10;Changed access to new server" />
     <MESSAGE value="Add Tab fragments&#10;add and update tab fragments&#10;also update server scripts after database update" />
     <MESSAGE value="MàJ commentaires DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="MàJ commentaires DB" />
+    <MESSAGE value="Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1587,7 +1592,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="103" selection-start="414" selection-end="414" vertical-scroll-proportion="0.2735632" vertical-offset="0" max-vertical-offset="731">
+        <state line="8" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.31264368" vertical-offset="0" max-vertical-offset="748">
           <folding />
         </state>
       </provider>
