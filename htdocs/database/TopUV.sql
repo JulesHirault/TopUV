@@ -1,4 +1,6 @@
 /*Script de création de la BD TopUV*/
+/*Table : Comment, description_uv, mark, student, uv/
+/*table association : student_uv (fait le lien entre les étudiants et les uvs auxquelles ils participent)*/
 CREATE TABLE IF NOT EXISTS `category` (
   `id` int(255) NOT NULL,
   `label` varchar(500) NOT NULL,

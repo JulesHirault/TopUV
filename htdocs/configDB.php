@@ -1,5 +1,5 @@
 <?php
-//Tableau récapitulatif des informations pour la connexion à la BD (nom BD, login, mdp)
+//Tableau récapitulatif des informations pour la création d'une instance de connexion à la BD (nom BD, login, mot de passe)
 return array
 (
         'dsn' => 'mysql:dbname=u956485103_topuv;host=mysql.hostinger.fr',

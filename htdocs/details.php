@@ -5,6 +5,7 @@ require_once('model/uv.php');
 require_once('model/category.php');
 require_once('model/description.php');
 //Script permettant de récupérer la description détaillée d'une UV
+//Les infos détaillées pour un uv sont contenues dans la table descritpion_uv
 //Initialisation du tableau de paramétres
 $parameters = array
 (

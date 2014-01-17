@@ -5,6 +5,7 @@ require_once('model/student.php');
 require_once('model/description.php');
 require_once('model/uv.php');
 //Script permettant l'ajout de commentaire concernant une UV
+//Ajout d'un commentaire dans la BD et màj de l'ensemble des données relatives à l'UV commentée (note moyenne)
 //Initialisation du tableau de paramétres
 $parameters = array
 (

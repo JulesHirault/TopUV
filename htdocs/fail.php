@@ -4,6 +4,7 @@ require_once('model/student.php');
 require_once('model/uv.php');
 require_once('model/description.php');
 //Script permettant de récupérer la liste des 10 UVs les moins bien notées
+//Récupérer les 10 uv les moins bien notées revient à selectionner les 10 premières uv après les avoir toutes triées (ordre croissant) en fonction de leur note moyenne respective.
 //Initialisation du tableau de paramétres
 $parameters = array
 (

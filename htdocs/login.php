@@ -2,6 +2,7 @@
 require_once('database/database.php');
 require_once('model/student.php');
 //Script d'authentification
+//Création d'une instance de connexion (cf configDB.php)
 //Initialisation du tableau de paramétres
 $parameters = array
 (
